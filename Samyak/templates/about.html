@@ -1,0 +1,333 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html  >
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'images/logo-1-122x122.png' %}" type="image/x-icon">
+
+
+  <title>about | SAMYAK2k19 </title> 
+  <link rel="stylesheet" href="{% static 'css/mobirise-iconsabout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/tetherabout.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.minabout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-grid.minabout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.minabout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styledropdownabout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/stylessociconabout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/stylethemeabout.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mbr-additionalabout.css' %}" type="text/css">
+
+
+<style>
+font{
+    font-size: 150%;
+   color: black ;
+   
+}
+
+.textt{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+   
+<section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-k">
+
+
+
+
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="{% url 'newapp:main' %}">
+                             <img src="{% static 'images/logo3.png' %}" alt="" title="" style="height: 4.0rem; width: 4.0rem;">
+                        </a>
+                    </span>
+      
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                        
+                        <a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}">Dashboard</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}">Proshow</a>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:events' %}">Events</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}">Team</a></li> <li class="nav-item">
+                        <a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}">Sponsors</a>
+      
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}">About-Us</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:accomodation' %}">Accomodation</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:logout' %}">logout</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:login' %}">login</a></li>
+                    {% endif %}
+                    {% if user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="">Welcome , {{user.username}}</a></li>
+                        {% endif %}</ul>
+      
+            </div>
+        </nav>
+      </section>
+<section class="engine"><a href="#">SAMYAK</a></section><section class="timeline1 cid-rzB7kn3tAC" id="timeline1-14" style="background-image: url({% static '/images/nasa-q1p7bh3shj8-unsplash-2000x1331.jpg' %})">
+
+
+
+
+
+    <div class="container align-center">
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">
+            ABOUT 
+        </h2>
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">
+            SAMYAK LEGACY
+        </h3>
+
+        <div class="container timelines-container" mbri-timelines="">
+            <!--1-->
+            <div class="row timeline-element reverse separline">
+                <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
+                   <div class="time-line-date-content">
+                       <p class="mbr-timeline-date mbr-fonts-style display-5">
+                           <b>SAMYAK 2K19-20</b>
+                       </p>
+                   </div>
+               </div>
+          <span class="iconBackground"></span>
+           <div class="col-xs-12 col-md-6 align-right">
+               <div class="timeline-text-content">
+                   <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                       #ANANTHA VISHWA
+                   </h4>
+                   <p class="mbr-timeline-text mbr-fonts-style display-7"  style="text-align: justify;">
+                    Anantha Viswa is a theme that has never been used before by any other institute for their fests. Because of
+                    the complexity involved and intricacies required, picking such a theme is demanding. However,
+                    we have put a lot of thought and have taken adequate forethought to implement this theme in our
+                    college for SAMYAK. Not just for entertainment, but also for knowledge and innovation, we
+                    have taken great efforts to attract and enlighten every participant drawn into this fest 
+                   <br> <font><u><a href="" class="textt">EXPLORE 2K19-20</a></u></font>
+                       
+                   </p>
+                </div>
+           </div>
+           </div>
+            <!--2-->
+            <div class="row timeline-element  separline">
+                <div class="timeline-date-panel col-xs-12 col-md-6 align-right">
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5">
+                           <b> SAMYAK 2K19</b>
+                        </p>
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-xs-12 col-md-6 align-left ">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            #MY INDIA MY INITIATIVE
+                        </h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            The theme “My India, My initiative” is a way to inspire and encourage people towards patriotism. 
+                            It has always been said that “unity is strength” and this theme helps in instigating a perspective of patriotism in the minds of the younger generation. 
+                            It is a way to take up the initiative by thinking about the country- If not now then when, if not me then who.
+                            A deep affection for the country and a drive to sacrifice one’s life for their motherland should be the basic attributes present in every citizen.
+                             The spirit of patriotism has been lost with time. People lack the comprehension about the amount of blood and sacrifice it took to achieve a peaceful sleep.
+                              
+                             <br> <font><u><a href="{% url 'newapp:explore_19' %}" class="textt">EXPLORE 2K19</a></u></font>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-element  separline">
+                <div class="timeline-date-panel col-xs-12 col-md-6 align-right">
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5">
+                            <b>SAMYAK 2K18</b>
+                        </p>
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-xs-12 col-md-6 align-left ">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            #SMART CITIES
+                        </h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7" style="text-align: justify;">
+                            A Smart city is an urban area that uses different types of electronic Internet of things (IoT) sensors to collect data and then use these data to manage assets and resources efficiently. This includes data collected from citizens, devices, and assets that is processed and analyzed to monitor and manage traffic and transportation systems, power plants, water supply networks, waste management, crime detection,[1] information systems, schools, libraries, hospitals, and other community services. 
+                            <br> <font><u><a href="{% url 'newapp:explore_18' %}" class="textt">EXPLORE 2K18</a></u></font>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="row timeline-element reverse">
+                <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5"  style="text-align: justify;">
+                          <b> SAMYAK 2K17</b>
+                        </p>
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <div class="col-xs-12 col-md-6 align-right">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            #INDUSTRY 4.0
+                        </h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7"  style="text-align: justify;">
+                            Industry 4.0 is the subset of the fourth industrial revolution[1] that concerns industry. The fourth industrial revolution encompasses areas which are not normally classified as industry, such as smart cities for instance.
+
+                            Although the terms "industry 4.0" and "fourth industrial revolution" are often used interchangeably, "industry 4.0" refers to the concept of factories in which machines are augmented with wireless connectivity and sensors, connected to a system that can visualise the entire production line and make decisions on its own. 
+                            <br> <font><u><a href="{% url 'newapp:explore_17' %}" class="textt">EXPLORE 2K17</a></u></font>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!--4-->
+           
+            <!--5-->
+
+            <!--6-->
+
+            <!--7-->
+
+            <!--8-->
+
+            <!--9-->
+
+            <!--10-->
+
+            <!--11-->
+
+            <!--12-->
+
+        </div>
+    </div>
+</section>
+
+<section class="cid-rzB7oWy71E" id="footer1-15">
+
+
+
+
+
+    <div class="container">
+        <div class="media-container-row content text-white">
+            <div class="col-12 col-md-3">
+                <div class="media-wrap">
+                    <a href="{% url 'newapp:main' %}">
+                        <img src="{% static 'images/logo-1-122x122.png' %}" alt="samyak" title="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Address
+                </h5>
+                <p class="mbr-text">
+                    K L UNIVERSITY
+                    <br>VADDESWARAM
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Contacts
+                </h5>
+                <p class="mbr-text">
+                    Email: samyak@kluniversity.in
+                    <br>Phone: 
+                    <p>1)9154438039  2)94942748999</p>
+                            
+                                
+                    <p>3)9392112299 </p>
+                    
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Links
+                </h5>
+                <p class="mbr-text">
+                        <a class="text-primary" target="__blank" href="https://www.kluniversity.in">K L UNIVERSITY</a>
+                        
+                    </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7"></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-list align-right">
+                        <div class="soc-item">
+                            <a href="https://twitter.com/KLUniversity" target="_blank">
+                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/kl.samyak/" target="_blank">
+                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.youtube.com/channel/UCPrOyzURgK0t6qVVeKWUcaQ" target="_blank">
+                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.instagram.com/kl.samyak/" target="_blank">
+                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                        </div>
+                      
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="{% static 'js/jquery.minabout.js' %}"></script>
+  <script src="{% static 'js/popper.minabout.js' %}"></script>
+  <script src="{% static 'js/tether.minabout.js' %}"></script>
+  <script src="{% static 'js/bootstrap.minabout.js' %}"></script>
+  <script src="{% static 'js/smooth-scrollabout.js' %}"></script>
+  <script src="{% static 'js/nav-dropdownabout.js' %}"></script>
+  <script src="{% static 'js/navbar-dropdownabout.js' %}"></script>
+  <script src="{% static 'js/jquery.touch-swipe.minabout.js' %}"></script>
+  <script src="{% static 'js/scriptthemeabout.js' %}"></script>
+
+
+</body>
+</html>

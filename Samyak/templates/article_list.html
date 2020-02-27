@@ -1,0 +1,19 @@
+{% if request.user.is_staff %}
+  {% for article in object_list %}
+    <div class="card">
+      <div class="card-header">
+        <span class="font-weight-bold">{{ article.name }}</span>
+       
+      </div>
+      <div class="card-body">
+        {{ article.description }}
+      </div>
+      <div class="card-footer text-center text-muted">
+        <a href="{% url 'newapp:article_edit' article.pk %}">Edit</a> |
+        <a href="{% url 'newapp:article_delete' article.pk %}">Delete</a>
+        <a href="{% url 'newapp:article_new' %}">+ New</a>
+      </div>
+    </div>
+    <br />
+  {% endfor %}
+  {% endif %}

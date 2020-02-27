@@ -1,0 +1,260 @@
+
+{% load static %}
+
+<head>
+<style>
+body{
+    background-color:rgb(170, 98, 98);
+}
+    .cont{
+        background-color: chocolate;
+        margin-left: 25%;
+        margin-right: 28%;
+        margin-top: 10%;
+        
+
+     
+    }
+    
+   .col-2{
+       height: 10%;
+       font-size: 70px;
+       padding: 50px;
+       margin-left: 12%;
+       
+   }
+   .input-group{
+       position: relative;
+       top: -30px;
+       height: auto;
+       
+       width: auto;
+       margin-left:35%;
+    
+       
+       
+   }
+
+   .coll-2{
+    height: 10%;
+       font-size: 70px;
+     
+       margin-left: 17.7%;
+       margin-bottom: 4.5%;
+       
+   }
+
+ .form-control{
+     width: 35%;
+     height: 5%;
+     
+ }
+ #praveen{
+   margin-left: +0%;
+   border: 10px red;
+   border-radius: 25px;
+   height: 5%;
+   width: 35%;
+     
+ }
+ #samyak{
+  margin-left: 34%;
+  border: 10px red;
+  border-radius: 25px;
+  height:  5%;
+  width: 25%;
+ }
+ 
+    </style>
+<style>
+    @media only screen and (max-width: 1024px)
+{
+    .cont{
+        background-color: chocolate;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        
+
+     
+    }
+    
+   .col-2{
+       height: 10%;
+       font-size: 70px;
+       padding: 50px;
+       margin-left: 10%;
+       
+   }
+   .input-group{
+       position: relative;
+       top: -100px;
+       height: auto;
+       
+       width: auto;
+       margin-left:40%;
+    
+       
+       
+   }
+
+   .coll-2{
+    height: 10%;
+       font-size: 70px;
+     
+       margin-left: 17.5%;
+       margin-bottom: 4.5%;
+       
+   }
+
+ .form-control{
+     width: 30%;
+     height: 4%;
+     border: 2px solid red;
+     border-radius: 25px;
+ }
+ 
+ #praveen{
+   margin-left: +7%;
+   border: 10px red;
+   border-radius: 25px;
+   height: 2%;
+   width: 15%;
+     
+ }
+ #samyak{
+  
+ 
+  
+  border: 10px red;
+  border-radius: 25px;
+  height:  2%;
+  width: 15%;
+
+ }
+}
+</style>
+</head>
+
+
+
+<div class="cont" style="border: solid black;border-radius: 100px;">
+{% block container %}
+
+{% if heading %}
+<h3>{{heading}}</h3>
+{% endif %}
+<form class="form-horizontal" method="POST" action="">
+    {% csrf_token %}
+  
+<div class="row spacer">
+<div class="col-2">
+    <label>{{bookform.name.label}}</label>
+</div>
+{% if errors %}
+        <p>Error</p> 
+{% endif %}
+<div class="col-4">
+    <div class="input-group" >
+     
+        {{bookform.name}}
+      
+       
+    </div>
+</div>
+</div>
+<div class="coll-2">
+    <label>Details(Minimum 3)</label> 
+</div>
+{{ formset.management_form }}
+{% for form in formset %}
+<div class="row form-row spacer">
+    <br>
+    <div class="col-4">
+        <div class="input-group">
+            <div class="hari" style="margin-right: 80%;margin-left:-14%;width: 100%;">
+            {{form.name}}
+           
+            {{form.mail}}
+        </div>
+            <div class="input-group-append">
+                <br>
+                <button class="btn btn-success add-form-row" id="praveen">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="row spacer">
+    <div class="col-4 offset-2">
+        <button type="submit" class="btn btn-block btn-primary" id="samyak">Join</button>
+    </div>
+</div>
+</form>
+</div>
+{% endblock %}
+
+{% block custom_js %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script type="text/javascript">
+function updateElementIndex(el, prefix, ndx) {
+    var id_regex = new RegExp('(' + prefix + '-\\d+)');
+    var replacement = prefix + '-' + ndx;
+    if ($(el).attr("for")) $(el).attr("for", $(el).attr("for").replace(id_regex, replacement));
+    if (el.id) el.id = el.id.replace(id_regex, replacement);
+    if (el.name) el.name = el.name.replace(id_regex, replacement);
+}
+function cloneMore(selector, prefix) {
+    var newElement = $(selector).clone(true);
+    var total = $('#id_' + prefix + '-TOTAL_FORMS').val();
+    newElement.find(':input:not([type=button]):not([type=submit]):not([type=reset])').each(function() {
+        var name = $(this).attr('name')
+        if(name) {
+            name = name.replace('-' + (total-1) + '-', '-' + total + '-');
+            var id = 'id_' + name;
+            $(this).attr({'name': name, 'id': id}).val('').removeAttr('checked');
+        }
+    });
+    newElement.find('label').each(function() {
+        var forValue = $(this).attr('for');
+        if (forValue) {
+          forValue = forValue.replace('-' + (total-1) + '-', '-' + total + '-');
+          $(this).attr({'for': forValue});
+        }
+    });
+    total++;
+    $('#id_' + prefix + '-TOTAL_FORMS').val(total);
+    $(selector).after(newElement);
+    var conditionRow = $('.form-row:not(:last)');
+    conditionRow.find('.btn.add-form-row')
+    .removeClass('btn-success').addClass('btn-danger')
+    .removeClass('add-form-row').addClass('remove-form-row')
+    .html('-');
+    return false;
+}
+function deleteForm(prefix, btn) {
+    var total = parseInt($('#id_' + prefix + '-TOTAL_FORMS').val());
+    if (total > 1){
+        btn.closest('.form-row').remove();
+        var forms = $('.form-row');
+        $('#id_' + prefix + '-TOTAL_FORMS').val(forms.length);
+        for (var i=0, formCount=forms.length; i<formCount; i++) {
+            $(forms.get(i)).find(':input').each(function() {
+                updateElementIndex(this, prefix, i);
+            });
+        }
+    }
+    return false;
+}
+$(document).on('click', '.add-form-row', function(e){
+    e.preventDefault();
+    cloneMore('.form-row:last', 'form');
+    return false;
+});
+$(document).on('click', '.remove-form-row', function(e){
+    e.preventDefault();
+    deleteForm('form', $(this));
+    return false;
+});
+</script>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% if request.user.is_staff %}
+    <h1>New article</h1>
+    <form action="" enctype="multipart/form-data"  method="post">{% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn btn-success ml-2" type="submit">Save</button>
+    </form>
+{% endif %}

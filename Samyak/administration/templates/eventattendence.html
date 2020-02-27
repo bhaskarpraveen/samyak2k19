@@ -1,0 +1,43 @@
+Total number-{{num}}
+
+<table class="table">
+    <tr>
+            <th>Samyak Id</th>
+            <th>Name</th>
+            <th>email</th>
+            <th>Gender</th>
+            <th>reg amount</th>
+            <th>id Number</th>
+
+            <th>Ambassador</th>
+        </tr>
+        {% for u in user %}
+<tr>
+    <td>{{u.user.samyak_id}}</td>
+
+    <td>{{ u.user.username }}</td>
+
+    <td>{{ u.user.email }}</td>
+
+    <td>{{u.user.get_gender_display}}</td>
+    <td>{{u.user.reg_amount}}</td>
+    <td>{{u.user.id_number}}</td>
+    <td>{{u.user.is_amb}}</td>
+</tr>
+{% endfor %}
+{% for us in reg %}
+<tr>
+    <td>{{us.samyak_id}}</td>
+
+    <td>{{ us.username }}</td>
+
+    <td>{{ us.email }}</td>
+
+    <td>{{us.get_gender_display}}</td>
+    <td>{{us.reg_amount}}</td>
+    <td>{{us.id_number}}</td>
+    <td>{{us.is_amb}}</td>
+</tr>
+{% endfor %}
+</table>
+

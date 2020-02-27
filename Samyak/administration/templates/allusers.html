@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<form method="get">
+        {{ filter.form|crispy}}
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <table class="table">
+            <tr>
+                    <th>Samyak Id</th>
+                    <th>Name</th>
+                    <th>email</th>
+                    <th>Gender</th>
+                    <th>reg amount</th>
+                    <th>id Number</th>
+
+                    <th>Ambassador</th>
+                </tr>
+      {% for user in filter.qs %}
+      <tr>
+            <td>{{user.samyak_id}}</td>
+
+            <td>{{ user.username }}</td>
+
+            <td>{{ user.email }}</td>
+
+            <td>{{user.get_gender_display}}</td>
+            <td>{{user.reg_amount}}</td>
+            <td>{{user.id_number}}</td>
+            <td>{{user.is_amb}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+{% endblock %}

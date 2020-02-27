@@ -1,0 +1,16 @@
+{% autoescape off %}
+Hi {{ user.username }}, 
+your Samyak id-{{user.samyak_id}}       
+{{linebreaksbr}}
+your order
+{% for order in order %}
+-{{order}}
+{% endfor %}
+{{linebreaksbr}}
+Token number -{{transaction.token}} , Transaction Amount-₹{{transaction.amount}}
+{{linebreaksbr}}
+your events       
+{% for order in events %}
+--{{order}}
+{% endfor %}
+{% endautoescape %}

@@ -1,0 +1,539 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--PAGE MADE BY DSC TEAM(i,e BACKGROUND ANMATIONS..)-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Home | Samyak2k19 </title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/star.css' %}">
+    <link href="{% static 'css/stars.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/logo-1-122x122.png' %}" type="image/x-icon">
+<style>
+@media only screen and (width : 1024px){
+    #satellite{
+        display:none;
+    }
+    img.imgg{
+        padding-right: 150%;
+       
+    }
+
+}
+</style>
+    <style>
+        @media only screen and (max-width: 900px){
+            #satellite{
+                display:none;
+            }
+.earth{
+    display: none;
+
+}
+.clouds{
+    display: none;
+}
+
+#stars{
+  display: none;
+}
+#stars2{
+  display: none;
+}
+#stars3{
+  display: none;
+}
+
+.sky-container{
+  display: none;
+}
+            .work{
+                overscroll-behavior: hidden;
+            }
+            #locator
+           {
+               position: absolute;
+               left: 35px;
+               right: 0px;
+               top: 300px;
+               height: 100px;
+               width:0%;
+               z-index: 200;
+               text-align: justify;
+               font-family: sans-serif;
+               font-size: 1px;
+           }
+
+        #satellite{
+            height: 10%;
+            width: 10%l;
+
+        }
+        #moon
+        {
+            display: none;
+        }
+
+        img.imgg{
+            
+            margin-bottom:50%;
+            width: 215%;
+            height: 215%;
+            
+        }
+        #body
+        {
+            overflow: hidden;
+        }
+
+
+        .nav_bg
+            {position:fixnav__bged;top:0;left:0;width:100%;height:100vh;background:#000;-webkit-transform-origin:top center;transform-origin:top center;}
+
+        .nav__primary
+        {
+
+
+        }
+        ul{
+            left: 10% !important;
+       /*   margin-left: 37% !important;*/
+          text-align: left !important;
+          width: 10% !important;
+
+
+
+        }
+
+
+
+
+        }
+
+
+
+
+        /*@media only screen and (max-width :1366px){
+            #satellite{
+                display: none;
+            }
+            .nav_bg
+            {position:fixnav__bged;top:0;left:0;width:100%;height:100vh;background:#000;-webkit-transform-origin:top center;transform-origin:top center}
+
+
+        }*/
+
+
+        </style>
+        <style>
+        @media only screen and (width : 768px){
+            img.imgg{
+                height:500%;
+                width:500%;
+                padding-right: 150%;
+            }
+        }
+        </style>
+        <style>
+        .body{
+margin:100%;
+padding:100vh;
+}
+@keyframes move-clouds-back {
+	  0%   {background-position:30% 30%;}
+	  25%  {background-position:40% 40%;}
+      50%  {background-position:50% 30%;}
+      75%  {background-position:60% 20%;}
+     100% {background-position:70% 10%;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:100px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:100000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position:30% 0;}
+    to {background-position:100000px 0;}
+}
+
+
+@keyframes earth-rotation {
+    from {background-position:0% 0%;}
+    to {background-position:173% 0%;}
+}
+@-webkit-keyframes earth-rotation {
+    from {background-position:0 0;}
+    to {background-position:100px 0;}
+}
+@-moz-keyframes earth-rotation {
+    from {background-position:0 0;}
+    to {background-position:100000px 0;}
+}
+@-ms-keyframes earth-rotation {
+    from {background-position:30% 30%;}
+    to {background-position:100000px 0;}
+}
+
+
+.clouds{
+  border-radius: 50%;
+  position:absolute;
+  opacity: 0.68;
+  top:20%;
+  left:-3%;
+  width:180px;
+  height: 170px;
+}
+
+
+.earth{
+	border-radius: 50%;
+	position:absolute;
+	top:20%;
+	left:-3%;
+	width:180px;
+	height: 170px;
+
+	box-shadow: 0 0 0 0 rgba(197, 239, 247, 1), 0 0 15px 0 rgba(197, 239, 247, 1);
+}
+
+.earth{
+    background:transparent url(https://media.treehugger.com/assets/images/2013/06/1.jpg) repeat top center;
+
+
+	-moz-animation:earth-rotation 2000s linear infinite;
+	-ms-animation:earth-rotation 2000s linear infinite;
+	-o-animation:earth-rotation 2000s linear infinite;
+	-webkit-animation:earth-rotation 2000s linear infinite;
+	animation:earth-rotation 2000s linear infinite;
+}
+
+
+.clouds{
+    background:transparent url(https://upload.wikimedia.org/wikipedia/commons/d/df/Earth-clouds.png) repeat top center;
+    z-index:2;
+
+  -moz-animation:move-clouds-back 2000s linear infinite;
+  -ms-animation:move-clouds-back 2000s linear infinite;
+  -o-animation:move-clouds-back 2000s linear infinite;
+  -webkit-animation:move-clouds-back 2000s linear infinite;
+  animation:move-clouds-back 2000s linear infinite alternate;
+}
+
+#samyakfont{
+
+  width:350px;
+ left:15%;
+ bottom: -10px;
+ transform: translateX(-50%);
+ position: absolute;
+ z-index: 2;
+
+}
+#samyakfont img
+{
+	animation: samyakfont 3s linear infinite;
+}
+
+@keyframes samyakfont
+{
+	100%{
+		transform: translateY(-1px);
+
+}
+	50%{
+		transform: translateY(1px)
+		}
+	0%{
+		transform: translateY(-1px);
+	}
+
+}
+
+
+#astronaut{
+   width:250px;
+	left:20%;
+	bottom: 300px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+
+}
+
+#astronaut img
+{
+
+	width: 100%;
+	animation: astronaut 4s linear infinite;
+}
+
+@keyframes astronaut
+{
+	100%{
+		transform: translateY(-10px);
+
+}
+	50%{
+		transform: translateY(2px)
+		}
+	0%{
+		transform: translateY(-10px);
+	}
+
+}
+        </style>
+    <!--    <style media="screen">
+           #locator
+           {
+               position: absolute;
+               right: 250px;
+               top: 440px;
+               height: 100px;
+               width:600px;
+               z-index: 200;
+               text-align: justify;
+               font-family: sans-serif;
+
+
+           }
+           .loader{
+               position:fixed;
+               z-index: 99;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               display: flex;
+
+           }
+           .loader .hidden{
+               animation: fadeout 1s;
+               animation-fill-mode: forwards;
+           }
+           @keyframes fadeout{
+               100%{
+                   opacity: 0;
+                   visibility: hidden;
+               }
+           }
+
+        </style>
+        <script>
+        window.addEventListener("load",function(){
+            setTimeout(function(){
+                $('.loader').fadeOut('slow',function(){
+            });
+
+        },4000);
+        });
+      </script>-->
+      
+</head>
+
+<body clas ="work"style=": none;">
+  <!--  <div class="loader">
+        <img src="{% static 'images/samyak.gif' %}" style="width: 100%;" alt="">
+    </div>-->
+  <a href="?#" data-section="0" class="magnetize" data-dist="5" data-cursor-type="medium" data-cursor-text="" style="cursor: none; transform: matrix(1, 0, 0, 1, 0, 0);">
+
+  </a>
+  <div id="cursor" class="is-medium" style="top: 65px; left: 1390px;">
+  <div class="cursor__label"></div>
+  <div class="cursor__bg"></div>
+</div>
+
+    <section class="wrapper">
+
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+	<div id="satellite">
+        <img src="{% static 'images\satellite.png' %}"></div>
+        <div id="astronaut"><img src="{%static 'images\astronaut .png'%}"></div>
+	<div id="moon">
+		<img src="{% static 'images\moon.png' %}"></div>
+	<div id="astroid">
+		</div>
+	<div id="astroid2">
+		</div>
+	<div id="astroid3">
+		</div>
+        <div id="title">
+
+        </div>
+
+
+
+
+                <div id="msg">
+
+                    <div id="zero">
+
+                    </div>
+                </div>
+               
+            </div>
+
+
+    </div>
+    <div class="earth"></div>
+    <div class="clouds"></div>
+<div id="samyakfont">
+  <img src="{% static 'images/TITILE AND DATES.png' %}" width="1700px" height="900px" class="imgg"></div>
+  <div id="logo">
+    <img src="{% static 'images/logo.png' %}" width="100px" height="100px" data-cursor-type="big" data-cursor-text="" class="" style="cursor: none;"></div>
+</section>
+
+
+
+
+  <div class="sky-container">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="content-container"></div>
+    <div class="bg-overlay"></div>
+    <div class="content-overlay"></div>
+    <div class="content-container h1"></div>
+    <div class="content container p"></div>
+    <div class="content-container p"></div>
+  </div>
+
+
+    <div id="" class="is-view is-big">
+
+
+    <div class="__bg"></div>
+</div>
+
+
+<div class="toggle magnetize" data-dist="5" data-dist="5" data-cursor-type="medium" data-cursor-text="" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+    <div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div class="nav" style="clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);">
+    <div class="nav_bg" ></div>
+    <div class="nav__container" >
+
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-32.000000, -29.000000)" fill="#000000" class="logo-g">
+                  <path d="M39.386,33.44 L35.928,33.44 L35.928,38.484 L39.282,38.484 C40.66,38.484 41.544,37.236 41.544,35.962 C41.544,34.714 40.712,33.44 39.386,33.44 Z M35.928,48 L32.106,48 L32.106,30.086 L39.464,30.086 C41.388,30.086 42.844,30.658 43.858,31.828 C44.872,32.972 45.366,34.35 45.366,35.962 C45.366,37.574 44.872,38.952 43.858,40.096 C42.844,41.24 41.388,41.812 39.464,41.812 L35.928,41.812 L35.928,48 Z M46.728,48 L46.728,29.254 L50.342,29.254 L50.342,48 L46.728,48 Z M65.354,48 L61.766,48 L61.766,46.622 C61.428,47.142 60.882,47.532 60.154,47.818 C59.452,48.104 58.802,48.234 58.23,48.234 C56.592,48.234 55.162,47.662 53.914,46.492 C52.666,45.322 52.042,43.788 52.042,41.916 C52.042,40.044 52.666,38.536 53.914,37.366 C55.162,36.196 56.592,35.598 58.23,35.598 C59.374,35.598 60.934,36.04 61.766,37.21 L61.766,35.858 L65.354,35.858 L65.354,48 Z M58.828,44.802 C60.388,44.802 61.766,43.658 61.766,41.916 C61.766,40.174 60.388,39.03 58.828,39.03 C58.022,39.03 57.32,39.316 56.696,39.862 C56.098,40.408 55.786,41.084 55.786,41.916 C55.786,42.748 56.098,43.45 56.696,43.996 C57.32,44.542 58.022,44.802 58.828,44.802 Z M72.5140001,43.424 L70.9280001,43.008 C69.2380001,42.566 68.1200001,41.864 67.7040001,41.058 C67.3140001,40.226 67.2620001,39.81 67.2880001,39.056 C67.3140001,38.146 67.7820001,37.366 68.7180001,36.664 C69.6540001,35.962 70.7460001,35.598 72.0200001,35.598 C73.3980001,35.598 74.5680001,35.936 75.5300001,36.586 C76.4920001,37.236 76.9860001,38.25 77.0120001,39.628 L73.6060001,39.628 C73.5800001,38.926 73.1380001,38.562 72.2280001,38.562 C71.4220001,38.562 70.9280001,38.926 70.9540001,39.472 C70.9800001,39.914 71.3440001,40.2 72.0200001,40.382 L74.0740001,40.928 C74.9840001,41.162 75.6860001,41.552 76.2060001,42.046 C77.2720001,43.06 77.3760001,43.736 77.3760001,44.464 C77.3760001,45.686 76.8560001,46.622 75.7900001,47.272 C74.7500001,47.922 73.5280001,48.26 72.1240001,48.26 C70.7980001,48.26 69.6020001,47.896 68.5880001,47.142 C67.5740001,46.388 67.0800001,45.348 67.0540001,44.074 L70.4340001,44.074 C70.4600001,44.802 71.2660001,45.478 72.2280001,45.478 C73.0600001,45.452 73.7100001,45.062 73.7100001,44.464 C73.7100001,43.944 73.3720001,43.658 72.5140001,43.424 Z M83.7560001,31.204 L83.7560001,35.858 L86.3040001,35.858 L86.3040001,38.718 L83.7560001,38.718 L83.7560001,48 L80.1680001,48 L80.1680001,38.718 L77.9580001,38.718 L77.9580001,35.858 L80.1680001,35.858 L80.1680001,31.204 L83.7560001,31.204 Z M87.6140001,35.858 L91.2020001,35.858 L91.2020001,48 L87.6140001,48 L87.6140001,35.858 Z M89.4080001,29.254 C90.6300001,29.254 91.6180001,30.19 91.6180001,31.36 C91.6180001,32.53 90.6300001,33.492 89.4080001,33.492 C88.1600001,33.492 87.1460001,32.53 87.1460001,31.36 C87.1460001,30.19 88.1600001,29.254 89.4080001,29.254 Z M99.5060001,35.598 C101.664,35.598 103.614,36.534 104.784,38.172 L101.846,40.278 C101.326,39.472 100.546,39.056 99.5060001,39.056 C98.7000001,39.056 97.9980001,39.316 97.4000001,39.862 C96.8020001,40.382 96.4900001,41.058 96.4900001,41.89 C96.4900001,42.748 96.8020001,43.45 97.4000001,43.996 C97.9980001,44.542 98.7000001,44.802 99.5060001,44.802 C100.546,44.802 101.326,44.386 101.846,43.58 L104.784,45.66 C103.64,47.298 101.69,48.26 99.5060001,48.26 C97.7120001,48.26 96.1520001,47.662 94.8520001,46.466 C93.5520001,45.27 92.9020001,43.736 92.9020001,41.89 C92.9020001,40.044 93.5520001,38.536 94.8520001,37.366 C96.1520001,36.196 97.7120001,35.598 99.5060001,35.598 Z M111.492,46.076 C111.492,47.324 110.478,48.26 109.23,48.26 C107.982,48.26 106.994,47.324 106.994,46.076 C106.994,44.828 107.982,43.918 109.23,43.918 C110.478,43.918 111.492,44.854 111.492,46.076 Z" id="Plastic." transform="translate(71.799000, 38.757000) rotate(-360.000000) translate(-71.799000, -38.757000) "></path>
+              </g>
+          </g>
+      </svg>
+         <div class="nav__primary" style="padding:0%; margin-bottom: 40%;  ">
+            <ul>
+
+                <li style="">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="abhinav" >
+                    <a href="{% url 'newapp:dash' %}" data-section="1" data-cursor-type="big"   style="font-size: 30px;font-family: sans-serif;">
+                        Dashboard
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="{% url 'newapp:proshow' %}" data-section="2"  data-cursor-type="big"   style="font-size: 30px;font-family: sans-serif;">
+                        Proshow
+                       </a>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="{% url 'newapp:events' %}" data-section="2"  data-cursor-type="big"   style="font-size: 30px;font-family: sans-serif;">
+                          Events
+                       </a>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                       <!----<a href="about.html" data-section="4"  data-cursor-type="big"   style="font-size: 30px;">
+                            About</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-->
+
+                        <a href="{% url 'newapp:gallery' %}" data-section="5" data-cursor-type="big"  style="font-size: 30px;font-family: sans-serif;">
+                                  Gallery</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <a href="{% url 'newapp:team' %}" data-section="6" data-cursor-type="big" style="font-size: 30px;font-family: sans-serif;">
+                                           Team</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                           <!--- <a href="{% url 'newapp:contact' %}" data-section="6" data-cursor-type="big" style="font-size: 30px;">
+                                                                Contact</a>
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+
+                                                                <a href="{% url 'newapp:sponsors' %}" data-section="6" data-cursor-type="big" style="font-size: 30px;font-family: sans-serif;">
+                                                                                    Sponsors</a>
+                                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="{% url 'newapp:about' %}" data-section="4"  data-cursor-type="big"   style="font-size: 30px;font-family: sans-serif;">
+                       About</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% if user.is_authenticated %}
+                            <a href="{% url 'accounts:logout' %}" data-section="4"  data-cursor-type="big"   style="font-size: 30px;font-family: sans-serif;">
+                                Logout</a>
+                            {% else %}
+                            <a href="{% url 'accounts:login' %}" data-section="4"  data-cursor-type="big"   style="font-size: 30px;font-family: sans-serif;">
+                               Login</a>
+                                {% endif %}
+                                                                                    <!-----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                    <a href="team.html" data-section="6" data-cursor-type="big" style="font-size: 30px;">
+                                                                                            Login</a>
+                                                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                                                                            <a href="team.html" data-section="6" data-cursor-type="big" style="font-size: 30px;">
+                                                                                                    Sign Up</a>--->
+
+
+
+
+                                                                                                </div>
+
+                </li>
+
+
+            </ul>
+        </div>
+       <!----<div class="nav__secondary" style="padding-left: 20%; padding-bottom: 23%;">
+          <ul>
+
+            <li>
+                <a href="contact.html"  data-cursor-type="medium" data-cursor-text="big" style="cursor: none;padding-top: 0.5%;"><font size="6">Login</font></a>
+            </li>
+            <li>
+                <a href="sponsors.html"  data-cursor-type="medium" data-cursor-text="" style="cursor: none;padding-top: 0.5%;"><font size="6">Register</font></a>
+            </li>
+
+
+
+
+      </ul>
+    </div>--->
+    </div>
+
+</div>
+
+
+
+<div class="letter creative2--e2 creative2" style="opacity: 0; transform: matrix(1, 0, 0, 1, 0, 20);">
+
+</div>
+
+
+
+    <!-- Scripts -->
+
+    <script type="text/javascript" src="{% static 'js\app.js.download' %}"></script>
+
+
+
+</body>
+
+</html>

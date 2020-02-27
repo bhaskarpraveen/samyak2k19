@@ -1,0 +1,835 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Team|Samyak2k19</title>
+    <link rel="stylesheet" href="{% static 'css/style1team.css' %}">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+    <link rel="stylesheet" href="{% static 'css/mobirise-iconspreevents.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tether.minpreevents.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.minpreevents.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.minpreevents.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.minpreevents.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styledropdownpreevents.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylessocicondash.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylethemepreevents.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mbr-additionalpreevents.css' %}" type="text/css">
+  
+  
+
+<style>
+
+
+    .h2{
+      color: black;
+    }
+ 
+  #team{
+    background-color:  rgb(162, 191, 208);
+  }
+  #rotate90 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+  </style>
+</head>
+<body>
+   
+<section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-k">
+
+
+
+
+
+  <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </button>
+      <div class="menu-logo">
+          <div class="navbar-brand">
+              <span class="navbar-logo">
+                  <a href="{% url 'newapp:main' %}">
+                       <img src="{% static 'images/logo3.png' %}" alt="" title="" style="height: 4.0rem; width: 4.0rem;">
+                  </a>
+              </span>
+
+          </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                  
+                  <a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}">Dashboard</a></li>
+              <li class="nav-item">
+                  <a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}">Proshow</a>
+              </li>
+              
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:events' %}">Events</a></li>
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}">Team</a></li> <li class="nav-item">
+                  <a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}">Sponsors</a>
+
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}">About-Us</a></li>
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:accomodation' %}">Accomodation</a></li>
+              {% if user.is_authenticated %}
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:logout' %}">Logout</a></li>
+              {% else %}
+              <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:login' %}">Login</a></li>
+              {% endif %}
+              {% if user.is_authenticated %}
+                  <li class="nav-item"><a class="nav-link link text-white display-7" href="">Welcome , {{user.username}}</a></li>
+                  {% endif %}</ul>
+
+      </div>
+  </nav>
+</section>
+<div class="mbr-overlay" style="opacity: 1.0; background-color: rgb(35, 35, 35);">
+</div>
+<section id="team">
+  <div class="container">
+    <h1>Executive Chief Coordinator</h1>
+    <div class="row">
+      <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+        <div class="img-box1">
+          <img src="{% static 'images/RAHUL CHIEF.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+          <ul>
+            <a href="https://www.facebook.com/chagarlamudirahul" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+            <a href="https://www.instagram.com/rahulchagarlamudi" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+            <a href="https://www.linkedin.com/in/rahulchagarlamudi" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+          </ul>
+        </div>
+        <h2>Rahul Chagarlamudi</h2>
+        <h3>Executive Chief</h3>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+<section id="team">
+   <div class="container">
+     <h1>Chief Coordinators</h1>
+     <div class="row">
+       
+
+         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+             <div class="img-box1">
+               <img src=" {%static 'images/AKHIL CHIEF.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+               <ul>
+                 <a href="https://m.facebook.com/akhil.reddy.58367116?ref=bookmarks" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                 <a href="https://instagram.com/akhil_rdy?igshid=14rvi5y05pkhd" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                 <a href="https://www.linkedin.com/in/akhil-reddy-486697148" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+               </ul>
+             </div>
+             <h2>Akhil Reddy</h2>
+             <h3>Chief</h3>
+
+           </div>
+           <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+               <div class="img-box1">
+                 <img src="{%static 'images/TARUN CHIEF.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                 <ul>
+                   <a href="https://m.facebook.com/tarun.ravela" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                   <a href="https://www.instagram.com/tarun_ravela/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                   <a href="https://www.linkedin.com/in/tarun-ravela-a92510143/" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                 </ul>
+               </div>
+               <h2>Tarun Ravela</h2>
+               <h3>Chief</h3>
+
+             </div>
+             <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                 <div class="img-box1">
+                   <img src="{%static 'images/tejeswarpalla.jpeg'%}" class="img-responsive"  style="width: 250px;height: 250px;">
+                   <ul>
+                     <a href="https://www.facebook.com/palla.tejeswar" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                     <a href="https://instagram.com/teju_palla_368?igshid=1xe21ly7nromp" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                     <a href="https://www.linkedin.com/in/teju-palla-357010154" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                   </ul>
+                 </div>
+                 <h2>Tejeswar Palla</h2>
+                 <h3>Chief</h3>
+
+               </div> 
+
+          
+
+                
+                 <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                     <div class="img-box1">
+                       <img src="{%static 'images/sai kiran.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                       <ul>
+                         <a href="" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                         <a href="" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                         <a href="" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                       </ul>
+                     </div>
+                     <h2>B Sai Kiran</h2>
+                     <h3>Chief</h3>
+
+                   </div>
+
+
+     </div>
+   </div>
+ </section>
+ <section id="team">
+     <div class="container">
+       <h1>Technical</h1>
+       <div class="row">
+         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+           <div class="img-box1">
+             <img src=" {%static 'images/VIDYA.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+             <ul>
+               <a href="https://www.facebook.com/vidya.chowdary.54" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+               <a href="https://www.instagram.com/vidya_ramineni/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+               <a href="https://www.linkedin.com/in/vidya-ramineni-14b898191" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+             </ul>
+           </div>
+           <h2>R Vidya</h2>
+           <h3>Technical</h3>
+           
+         </div>
+         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+           <div class="img-box1">
+             <img src="{%static 'images/anuhya.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+             <ul>
+               <a href="https://m.facebook.com/anuhyachowdary.chirumamilla?ref=bookmarks" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+               <a href="https://instagram.com/anu_c_c?igshid=1mwtjah50wbhc" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+               <a href="https://www.linkedin.com/in/anuhya-chirumamilla-900026184/" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+             </ul>
+           </div>
+           <h2>Ch Anuhya</h2>
+           <h3>Technical</h3>
+
+         </div>
+         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+           <div class="img-box1">
+             <img src="{%static 'images/ANAND tech.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+             <ul>
+               <a href="https://m.facebook.com/anandpheonix" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+               <a href="https://www.instagram.com/_anand.pheonix_/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+               <a href="https://www.linkedin.com/in/anand-pachipala-61152518b" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+             </ul>
+           </div>
+           <h2>P Anand</h2>
+           <h3>Technical</h3>
+
+         </div>
+         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+           <div class="img-box1">
+             <img src="{%static 'images/RAVIKANTH.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+             <ul>
+               <a href="https://www.facebook.com/ravikanth.javvdi" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+               <a href="https://www.instagram.com/ravi_kanth_javvadi/?hl=en" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+               <a href="https://www.linkedin.com/in/ravi-kanth-javvadi-70299b12a/" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+             </ul>
+           </div>
+           <h2>J Ravikanth</h2>
+           <h3>Technical</h3>
+
+         </div>
+         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+           <div class="img-box1">
+             <img src="{%static 'images/YESASWI.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+             <ul>
+               <a href="https://www.facebook.com/yesaswi" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+               <a href="https://www.instagram.com/____yesaswi____" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+               <a href="https://linkedin.com/in/yesaswi" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+             </ul>
+           </div>
+           <h2>Yesaswi</h2>
+           <h3>Technical</h3>
+
+         </div>
+
+
+       </div>
+     </div>
+   </section>
+   <section id="team">
+        <div class="container">
+          <h1>Non Technical</h1>
+          <div class="row">
+            <div class="col-md-3 profile-pic1 text-center">
+              <div class="img-box1">
+                <img src="{%static 'images/brahma.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                <ul>
+                  <a href="https://www.facebook.com/profile.php?id=100010820887659" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="https://www.instagram.com/myself_brahma/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                  <a href="https://www.linkedin.com/in/brahma-naidu-narisetty-891062187" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h2>Brahma</h2>
+              <h3>Non Technical</h3>
+
+            </div>
+            <div class="col-md-3 profile-pic1 text-center">
+              <div class="img-box1">
+                <img src="{%static 'images/JAYANTH C.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                <ul>
+                  <a href="https://www.facebook.com/jayanth.chowdary.1238" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="https://www.instagram.com/raavan_jai/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                  <a href="https://www.linkedin.com/in/valeti-jayanth-chowdary-667657193" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h2>V JAYANTH</h2>
+              <h3>Non Technical</h3>
+
+            </div>
+            <div class="col-md-3 profile-pic1 text-center">
+              <div class="img-box1">
+                <img src="{%static 'images/ALLAGANESH.jpg'%}" class="img-responsive" id="rotate90" style="width: 250px;height: 250px;">
+                <ul>
+                  <a href="https://www.facebook.com/alla.ganesh.5" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="https://instagram.com/alla_ganesh?igshid=1w58pz50213pu" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                  <a href="https://www.linkedin.com/in/ganesh-alla-79951318b" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h2>Alla Ganesh</h2>
+              <h3>Non Technical</h3>
+
+            </div>
+            <div class="col-md-3 profile-pic1 text-center">
+              <div class="img-box1">
+                <img src="{%static 'images/PAVAN.jpg'%}" class="img-responsive" id="rotate90" style="width: 250px;height: 250px;">
+                <ul>
+                  <a href="https://www.facebook.com/pavan.atm9909" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                  <a href="https://www.instagram.com/pavan.atm" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                  <a href="https://www.linkedin.com/mwlite/me" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                </ul>
+              </div>
+              <h2>A Pavan</h2>
+              <h3>Non Technical</h3>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section id="team">
+
+           <div class="container">
+             <h1>Sponsorship &amp; Collaborations</h1>
+             <div class="row">
+               <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                 <div class="img-box1">
+                   <img src="{%static 'images/jayanth.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                   <ul>
+                     <a href="https://www.facebook.com/Jayanth246" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                     <a href="https://www.instagram.com/jayanth_y" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                     <a href="https://in.linkedin.com/in/jayanth-yedureswaram-3b5845136" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                   </ul>
+                 </div>
+                 <h2>Jayanth Y</h2>
+                 <h3>Sponsorship &amp; Collaborations</h3>
+
+               </div>
+               
+
+             </div>
+           </div>
+         </section>
+    <section id="team">
+         <div class="container">
+           <h1>Registrations &amp; Certificates</h1>
+           <div class="row">
+             <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+               <div class="img-box1">
+                 <img src="{%static 'images/KRANTHI.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                 <ul>
+                   <a href="https://www.facebook.com/mahesh.kranthi.9" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                   <a href="https://www.instagram.com/kranthi_mahesh/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                   <a href="https://www.linkedin.com/in/karredla-kranthi-2a69b3137" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                 </ul>
+               </div>
+               <h2>Kranthi Mahesh</h2>
+               <h3>Registrations &amp; Certificates</h3>
+
+             </div>
+             <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                 <div class="img-box1">
+                   <img src="{%static 'images/venkatesh.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                   <ul>
+                     <a href="https://m.facebook.com/venkateshbathula97?ref=bookmarks" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                     <a href="https://instagram.com/awesome__dreamer_?igshid=rjbf1gjar2pu" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                     <a href="https://www.linkedin.com/in/venkatesh-bathula-8799a9137" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                   </ul>
+                 </div>
+                 <h2>Venkatesh B</h2>
+                 <h3>Registrations &amp; Certificates</h3>
+
+               </div>
+
+           </div>
+         </div>
+       </section>
+
+
+          <section id="team">
+
+               <div class="container">
+                 <h1>Logistics &amp; Space Management</h1>
+                 <div class="row">
+                   <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                     <div class="img-box1">
+                       <img src="{%static 'images/jagadesh.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                       <ul>
+                         <a href="https://www.facebook.com/jagadeeshnaidu.pavani" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                         <a href="https://instagram.com/jaggu_its_me?igshid=1868vpemmc9jy" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                         <a href="https://www.linkedin.com/in/jagadeesh-naidu-61a47a193" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                       </ul>
+                     </div>
+                     <h2>B Jagadeesh</h2>
+                     <h3>Logistics &amp; Space Management</h3>
+
+                   </div>
+
+
+                 </div>
+               </div>
+             </section>
+          <section id="team">
+               <div class="container">
+                 <h1>Public Relations</h1>
+                 <div class="row">
+                   <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                     <div class="img-box1">
+                       <img src="{%static 'images/jayasurya.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                       <ul>
+                         <a href="https://www.facebook.com/ViramSuryaBhai"><li><i class="fa fa-facebook" target="__blank"></i></li></a>
+                         <a href="https://www.instagram.com/ak__vilan/"><li><i class="fa fa-instagram" target="__blank"></i></li></a>
+                         <a href="http://linkedin.com/in/jaya-surya-gudipalli-65b42b12a"><li><i class="fa fa-linkedin" target="__blank"></i></li></a>
+                       </ul>
+                     </div>
+                     <h2>Jaya Surya</h2>
+                     <h3>Public Relations</h3>
+
+                   </div>
+                 <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                   <div class="img-box1">
+                     <img src="{%static 'images/datri.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                     <ul>
+                       <a href="https://www.facebook.com/dhatrishree.podugu" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                       <a href="https://www.instagram.com/dhatri_9/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                       <a href="https://www.linkedin.com/in/podugu-dhatri-shree-418473193" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                     </ul>
+                   </div>
+                   <h2>P Dhatri</h2>
+                   <h3>Public Relations</h3>
+
+                 </div>
+                 </div>
+               </div>
+             </section>
+             <section id="team">
+                  <div class="container">
+                    <h1>Hospitality</h1>
+                    <div class="row">
+                      <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                        <div class="img-box1">
+                          <img src="{%static 'images/PHANI.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                          <ul>
+                            <a href="https://www.facebook.com/phani.goparaju" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/phani_goparaju" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/phani-g-92367718b" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h2>G Phani</h2>
+                        <h3>Hospitality</h3>
+
+                      </div>
+                      <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                        <div class="img-box1">
+                          <img src="{%static 'images/manjusha.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                          <ul>
+                            <a href="https://www.facebook.com/manjusha.choutupalli" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                            <a href="https://www.instagram.com/srinu_padhu/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                            <a href="https://www.linkedin.com/in/choutupalli-manjusha-0aa222193" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                          </ul>
+                        </div>
+                        <h2>Ch Manjusha</h2>
+                        <h3>Hospitality</h3>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </section>
+
+                   <section id="team">
+                        <div class="container">
+                          <h1>Proshow</h1>
+                          <div class="row">
+                            <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                              <div class="img-box1">
+                                <img src="{%static 'images/SRC.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                <ul>
+                                  <a href="https://www.facebook.com/srirevanthchowdary" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                  <a href="https://instagram.com/srirevanthchowdary?igshid=erusez9tq73s" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                  <a href="https://www.linkedin.com/in/sri-revanth-kandepi-77067018b" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                </ul>
+                              </div>
+                              <h2>Sri Revanth</h2>
+                              <h3>Pro Show</h3>
+
+                            </div>
+
+                          </div>
+                        </div>
+                      </section>
+                      <section id="team">
+                           <div class="container">
+                             <h1>Broadcasting</h1>
+                             <div class="row">
+                               <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                 <div class="img-box1">
+                                   <img src="{%static 'images/Kush.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                   <ul>
+                                     <a href="https://www.facebook.com/director.dudeja" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                     <a href="https://www.instagram.com/director_dudeja" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                     <a href="https://www.linkedin.com/in/director-dudeja" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                   </ul>
+                                 </div>
+                                 <h2>Kush Dudeja</h2>
+                                 <h3>Broadcasting</h3>
+
+                               </div>
+
+                             </div>
+                           </div>
+                         </section>
+                         <section id="team">
+                              <div class="container">
+                                <h1>Designing &amp; Drafting</h1>
+                                <div class="row">
+                                  <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                    <div class="img-box1">
+                                      <img src="{%static 'images/ASISH.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                      <ul>
+                                        <a href="https://www.facebook.com/asish.kondapalli" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        <a href="https://www.instagram.com/asish_kondapalli/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                        <a href="http://linkedin.com/in/asish-kondapalli-506b91153" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                      </ul>
+                                    </div>
+                                    <h2>K Asish</h2>
+                                    <h3>Designing</h3>
+
+                                  </div>
+                                  <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                    <div class="img-box1">
+                                      <img src="{%static 'images/charan DESIGNING.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                      <ul>
+                                        <a href="https://www.facebook.com/hemsai.charan.16.4.love" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        <a href="https://www.instagram.com/mr.h_s_c/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                        <a href="https://www.linkedin.com/in/hem-sai-charan-744b5113a" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                      </ul>
+                                    </div>
+                                    <h2>K Hem Sai Charan</h2>
+                                    <h3>Designing</h3>
+
+                                  </div>
+                                  <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                    <div class="img-box1">
+                                      <img src="{%static 'images/ADITYA.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                      <ul>
+                                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                        <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                                        <a href="#" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                      </ul>
+                                    </div>
+                                    <h2>V Aditya</h2>
+                                    <h3>Drafting</h3>
+
+                                  </div>
+
+                                </div>
+                              </div>
+                            </section>
+
+                            <section id="team">
+                                 <div class="container">
+                                   <h1>Protocol</h1>
+                                   <div class="row">
+                                     <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                       <div class="img-box1">
+                                         <img src="{%static 'images/seeda.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                         <ul>
+                                           <a href="#" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                           <a href="#" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                           <a href="#" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                         </ul>
+                                       </div>
+                                       <h2>S Chandra Shekar</h2>
+                                       <h3>Protocol</h3>
+
+                                     </div>
+                                     <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                       <div class="img-box1">
+                                         <img src="{%static 'images/pranay.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                         <ul>
+                                           <a href="#" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                           <a href="#" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                           <a href="#" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                         </ul>
+                                       </div>
+                                       <h2>K Pranay</h2>
+                                       <h3>Protocol</h3>
+
+                                     </div>
+                                     <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                       <div class="img-box1">
+                                         <img src="{%static 'images/mohith.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                         <ul>
+                                           <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                           <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                                           <a href="#" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                         </ul>
+                                       </div>
+                                     <h2>K Mohith</h2>
+                                       <h3>Protocol</h3>
+
+                                     </div>
+                                     <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                       <div class="img-box1">
+                                         <img src="{%static 'images/sai.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                         <ul>
+                                           <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                           <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                                           <a href="#" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                         </ul>
+                                       </div>
+                                     <h2>A Sai Kumar</h2>
+                                       <h3>Protocol</h3>
+
+                                     </div>
+                                     <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                       <div class="img-box1">
+                                         <img src="{% static 'images/srisandeep.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                         <ul>
+                                           <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                           <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                                           <a href="#" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                         </ul>
+                                       </div>
+                                     <h2>K Sri Sandeep</h2>
+                                       <h3>Protocol</h3>
+
+                                     </div>
+                                   </div>
+                                 </div>
+                               </section>
+                               <section id="team">
+                                     <div class="container">
+                                       <h1>Developers</h1>
+                                       <div class="row">
+                                         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                           <div class="img-box1">
+                                             <img src="{%static 'images/abhinav.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                             <ul>
+                                               <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                               <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                                               <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                                             </ul>
+                                           </div>
+                                           <h2>Abhinav M</h2>
+                                           <h3>Web Developer</h3>
+
+                                         </div>
+                                         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                           <div class="img-box1">
+                                             <img src="{%static 'images/praveen.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                             <ul>
+                                               <a href="https://www.facebook.com/profile.php?id=100007017078272" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                               <a href="https://www.instagram.com/_.im_praveen._/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                               <a href="https://www.linkedin.com/in/bhaskar-praveen-74536516a/" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                             </ul>
+                                           </div>
+                                           <h2>N B Praveen</h2>
+                                           <h3>Web Developer</h3>
+
+                                         </div>
+                                         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                           <div class="img-box1">
+                                             <img src="{%static 'images/praneeth.png'%}" class="img-responsive" style="width: 240px;height: 250px;">
+                                             <ul>
+                                               <a href="https://www.facebook.com/praneeth.mandalemula" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                               <a href="https://www.instagram.com/praneeth._.m/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                               <a href="https://in.linkedin.com/in/praneeth-mandalemula-b37913176" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                             </ul>
+                                           </div>
+                                           <h2>M P Praneeth</h2>
+                                           <h3>Web Developer</h3>
+
+                                         </div>
+                                         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                           <div class="img-box1">
+                                             <img src="{%static 'images/sunil.jpg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                             <ul>
+                                               <a href="https://www.facebook.com/profile.php?id=100041820185075&amp;ref=br_rs" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                               <a href="https://www.instagram.com/sunilvurandur/" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                               <a href="https://www.linkedin.com/in/sunil-vurandur-211139170/" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                             </ul>
+                                           </div>
+                                           <h2>V Sunil</h2>
+                                           <h3>Web Developer</h3>
+
+                                         </div>
+                                       <!--  <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                           <div class="img-box1">
+                                             <img src="{%static 'images/santosh.jpeg'%}" class="img-responsive" style="width: 250px;height: 250px;">
+                                             <ul>
+                                               <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                               <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                                               <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                                             </ul>
+                                           </div>
+                                           <h2>Santosh Amirisetty</h2>
+                                           <h3>Web Developer</h3>
+
+                                         </div>-->
+                                         <div class="col-md-3 profile-pic1 text-center" style="margin: auto;">
+                                             <div class="img-box1">
+                                               <img src="{%static 'images/vardhan.jpg'%}" class="img-responsive" style="width: 230px;height: 250px;">
+                                               <ul>
+                                                 <a href="https://www.facebook.com/vardhangss" target="__blank"><li><i class="fa fa-facebook"></i></li></a>
+                                                 <a href="https://www.instagram.com/vardhan_gss/?hl=en" target="__blank"><li><i class="fa fa-instagram"></i></li></a>
+                                                 <a href="https://www.linkedin.com/in/vardhan-gss-a6a56b179/" target="__blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                               </ul>
+                                             </div>
+                                             <h2>G S S Vardhan</h2>
+                                             <h3>Web Developer</h3>
+
+                                           </div>
+
+                                       </div>
+                                     </div>
+                                   </section>
+
+       <!--footer-->
+
+    <section class="cid-rzsWKwHBnr" id="footer1-n">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row content text-white">
+                <div class="col-12 col-md-3">
+                    <div class="media-wrap">
+                        <a href="{% url 'newapp:main' %}">
+                            <img src="{% static 'images/logo-1-122x122.png' %}" alt="samyak" title="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Address
+                    </h5>
+                    <p class="mbr-text">
+                        KL UNIVERSITY
+                        <br>VADDESWARAM
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Contacts
+                    </h5>
+                    <p class="mbr-text">
+                        Email: samyak@kluniversity.in
+                        <br>Phone:
+                        <p>1)9154438039  2)94942748999</p>
+                            
+                                
+                        <p>3)9392112299 </p>
+
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Links
+                    </h5>
+                    <p class="mbr-text">
+                        <a class="text-primary" target="__blank" href="https://www.kluniversity.in">KL University</a>
+                        <br><a class="text-primary" href="?#"></a>
+                        <br><a class="text-primary" href="?#"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-6 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-list align-right">
+                            <div class="soc-item">
+                                <a href="https://twitter.com/KLUniversity" target="_blank">
+                                    <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com/kl.samyak/" target="_blank">
+                                    <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.youtube.com/channel/UCPrOyzURgK0t6qVVeKWUcaQ" target="_blank">
+                                    <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.instagram.com/kl.samyak/" target="__blank">
+                                    <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                          
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="{% static 'js/jquery.minpreevents.js' %}"></script>
+    <script src="{% static 'js/popper.minpreevents.js' %}"></script>
+    <script src="{% static 'js/tether.minpreevents.js' %}"></script>
+    <script src="{% static 'js/bootstrap.minpreevents.js' %}"></script>
+    <script src="{% static 'js/smooth-scrollpreevents.js' %}"></script>
+    <script src="{% static 'js/nav-dropdownpreevents.js' %}"></script>
+    <script src="{% static 'js/navbar-dropdownpreevents.js' %}"></script>
+    <script src="{% static 'js/jquery.touch-swipe.minpreevents.js' %}"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
+
+</body>
+</html>

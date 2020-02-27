@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{% static 'css/mobirise-iconspreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/tether.minpreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.minpreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-grid.minpreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.minpreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styledropdownpreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/stylessociconpreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/stylethemepreevents.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mbr-additionalpreevents.css' %}" type="text/css">
+
+  <title>ACCOMODATION PAGE</title>
+  <style media="screen">
+
+  body {
+    background: #2a2a2b;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica;
+  }
+
+  .big {
+    font-size: 1.2em;
+  }
+
+  .small {
+    font-size: .7em;
+  }
+
+  .square {
+    width: .7em;
+    height: .7em;
+    margin: .5em;
+    display: inline-block;
+  }
+
+  /* Custom dropdown */
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px; /* demo only */
+  }
+
+  .custom-dropdown select {
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: inherit;
+    padding: .5em;
+    padding-right: 2.5em;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  }
+
+  .custom-dropdown::before,
+  .custom-dropdown::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .custom-dropdown::after { /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.2em;
+    top: 50%;
+    margin-top: -.5em;
+  }
+
+  .custom-dropdown::before { /*  Custom dropdown arrow cover */
+    width: 2em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .custom-dropdown select[disabled] {
+    color: rgba(0,0,0,.3);
+  }
+
+  .custom-dropdown select[disabled]::after {
+    color: rgba(0,0,0,.1);
+  }
+
+  .custom-dropdown::before {
+    background-color: rgba(0,0,0,.15);
+  }
+
+  .custom-dropdown::after {
+    color: rgba(0,0,0,.4);
+  }
+
+
+
+
+  main {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .button {
+    background: #2B2D2F;
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .text {
+    font: bold 1.25rem/1 poppins;
+    color: #71DFBE;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-52%);
+    left: 0;
+    right: 0;
+  }
+
+  .progress-bar {
+    position: absolute;
+    height: 10px;
+    width: 0;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 200px;
+    transform: translateY(-50%) translateX(-50%);
+    background: lighten(#2B2D2F, 15%);
+  }
+
+  svg {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    right: 0;
+  }
+
+  .check {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  </style>
+  <script>
+
+  function toamount(a) {
+    return a + " ₹";
+  }
+
+  </script>
+
+</head>
+<body style="overflow:hidden">
+    <!--navigation-->
+    <section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-z">
+
+
+
+            <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="menu-logo">
+                    <div class="navbar-brand">
+                        <span class="navbar-logo">
+                            <a href="index.html">
+                                 <img src="images/logo-1-122x122.png" alt="" title="" style="height: 3.8rem;">
+                            </a>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                            <a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}">Dashboard</a>
+                        </li><li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}">Proshow</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}">Team</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:contact' %}">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}">Sponsors</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}">About</a></li>
+
+                       <!-- <li class="nav-item"><a class="nav-link link text-white display-7" href="#">Log-in</a></li>-->
+                        <li class="nav-item"><a class="nav-link link text-white display-7" >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a></li></ul>
+
+                </div>
+            </nav>
+        </section>
+
+
+
+
+
+    <!--navigation end-->
+<div class="middlepage" style="margin-top:11%;">
+    <h2>SAMYAK ACCOMODATION KL UNIVERSITY</h2>
+
+
+
+    <br/><br/>
+
+    <table align="center">
+      <tr>
+      <th>  <h1>Duration : </h1></th>
+
+      <th>
+       <form method="post">
+      {% csrf_token %}
+      <span class="custom-dropdown big">
+          <select id="change_chart"  name="duration" style="height:2000%;">
+             <option value="1">24 hours</option>
+              <option value="2">48 hours</option>
+          </select>
+        </span>
+
+       
+         
+    </form>
+        <script>
+        var menu = document.getElementById("change_chart");
+        menu.addEventListener("change", generateData);
+
+        function generateData(event) {
+          if (menu.value == '1') {
+            document.getElementById('amount').innerHTML =toamount(200);
+          } else if (menu.value == '2') {
+             document.getElementById('amount').innerHTML =toamount(400);      }
+        }
+        </script>
+    </span></th>  </tr>
+    </table>
+
+    <table align="center">
+      <tr>
+
+
+    <th><h1>Amount :</h1></th>
+    <th><h1 id="amount">200 ₹</h1></th>
+    </tr>
+    </table>
+
+
+    <br/>
+
+
+      <div class="button" style="background-color:#1abc9c;">
+        <div class="text" ><font color="black">Pay</font></div>
+      </div>
+
+
+</div>
+<!-- partial -->
+  <script src='http://ajax.googleapis.com/ajax/libs/prototype/1.7.1/prototype.js'></script>
+  <script src="{% static 'js/jquery.minpreevents.js' %}"></script>
+  <script src="{% static 'js/popper.minpreevents.js' %}"></script>
+  <script src="{% static 'js/tether.minpreevents.js' %}"></script>
+  <script src="{% static 'js/bootstrap.minpreevents.js' %}"></script>
+  <script src="{% static 'js/smooth-scrollpreevents.js' %}"></script>
+  <script src="{% static 'js/nav-dropdownpreevents.js' %}"></script>
+  <script src="{% static 'js/navbar-dropdownpreevents.js' %}"></script>
+  <script src="{% static 'js/jquery.touch-swipe.minpreevents.js' %}"></script>
+  <script src="{% static 'js/scriptthemepreevents.js' %}"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Proshow</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+
+
+
+<!--===============================================================================================-->
+	<!--<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css\bootstrap.minpro.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css\font-awesome.minpro.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css\animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css\select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css\utilpro.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css\mainpro.css' %}">
+<!--===============================================================================================-->
+
+
+
+<link rel="stylesheet" href="{% static 'css/mobirise-iconspreevents.css' %}">
+<link rel="stylesheet" href="{% static 'css/tether.minpreevents.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.minpreevents.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-grid.minpreevents.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-reboot.minpreevents.css' %}">
+<link rel="stylesheet" href="{% static 'css/styledropdownpreevents.css' %}">
+<link rel="stylesheet" href="{% static 'css/stylessocicondash.css' %}">
+<link rel="stylesheet" href="{% static 'css/stylethemepreevents.css' %}">
+<link rel="stylesheet" href="{% static 'css/mbr-additionalpreevents.css' %}" type="text/css">
+
+
+
+</head>
+<body>
+
+	<section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-k">
+
+
+
+
+
+		<nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="menu-logo">
+				<div class="navbar-brand">
+					<span class="navbar-logo">
+						<a href="{% url 'newapp:main' %}">
+							 <img src="{% static 'images/logo3.png' %}" alt="" title="" style="height: 3.0rem; width: 3.5rem;">
+						</a>
+{% if request.user.is_authenticated %}
+                                <a><font size="3" color="white">Your Samyak id : {{request.user.samyak_id}}</font></a>
+                                    {% endif %}                            </span>
+            				
+	</span>
+
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+
+						<a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}">Dashboard</a></li>
+					<li class="nav-item">
+						<a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}">Proshow</a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:events' %}">Events</a></li>
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}">Gallery</a></li>
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}">Team</a></li> <li class="nav-item">
+						<a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}">Sponsors</a>
+
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}">About-Us</a></li>
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:accomodation' %}">Accomodation</a></li>
+					{% if user.is_authenticated %}
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:logout' %}">Logout</a></li>
+					{% else %}
+					<li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:login' %}">Login</a></li>
+					{% endif %}
+					{% if user.is_authenticated %}
+						<li class="nav-item"><a class="nav-link link text-white display-7" href="">Welcome , {{user.username}}</a></li>
+						{% endif %}</ul>
+
+			</div>
+		</nav>
+	</section>
+
+
+	<!--  -->
+	<div class="simpleslide100">
+		<div class="simpleslide100-item bg-img1" style="background-image: url('{% static 'images/proshow.jpg' %}');"></div>
+		<div class="simpleslide100-item bg-img1" style="background-image: url('{% static 'images/proshow.jpg' %}');"></div>
+	</div>
+
+	<div class="flex-col-c-sb size1 overlay1">
+		<!--  -->
+		<!--<div class="w-full flex-w flex-sb-m p-l-80 p-r-80 p-t-22 p-lr-15-sm">
+			<div class="wrappic1 m-r-30 m-t-10 m-b-10">
+				<a href="#"><img src="images/icons/logo.png" alt="LOGO"></a>
+			</div>
+
+			<div class="flex-w m-t-10 m-b-10">
+				<a href="#" class="size2 m1-txt1 flex-c-m how-btn1 trans-04">
+					Sign Up
+				</a>
+			</div>
+		</div>-->
+
+		<!--  -->
+		<div class="flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-120" style="margin-top: 18%;">
+			<h3 class="l1-txt1 txt-center p-b-40 respon1">
+			<font color="white">	Samyak 2K19</font>
+			</h3>
+			<h3 class="l1-txt1 txt-center p-b-40 respon1">
+			<font color="white">	October 18 & 19</font>
+			</h3>
+		</div>
+
+		<!--  -->
+		<div class="flex-w flex-c-m p-b-35">
+			<a href="https://www.facebook.com/kl.samyak/" target="__blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-facebook"></i>
+			</a>
+
+			<a href="https://twitter.com/KLUniversity" target="__blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-twitter"></i>
+			</a>
+
+			<a href="https://www.youtube.com/channel/UCPrOyzURgK0t6qVVeKWUcaQ" target="__blank" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<i class="fa fa-youtube-play"></i>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+<!--===============================================================================================-->
+	<script src="{% static 'js\jquery-3.2.1.minpro.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'js\popperpro.js' %}"></script>
+	<script src="{% static 'js\bootstrap.minpro.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'js\select2.minpro.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'js\moment.minpro.js' %}"></script>
+	<script src="{% static 'js\moment-timezone.min.js' %}"></script>
+	<script src="{% static 'js\moment-timezone-with-data.min.js' %}"></script>
+	<script src="{% static 'js\countdowntime.js' %}"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 2019,
+			endtimeMonth: 10,
+			endtimeDate: 18,
+			endtimeHours: 0,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: ""
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'js\tilt.jquery.minpro.js' %}"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+
+
+<script src="{% static 'js/jquery.minpreevents.js' %}"></script>
+<script src="{% static 'js/popper.minpreevents.js' %}"></script>
+<script src="{% static 'js/tether.minpreevents.js' %}"></script>
+<script src="{% static 'js/bootstrap.minpreevents.js' %}"></script>
+<script src="{% static 'js/smooth-scrollpreevents.js' %}"></script>
+<script src="{% static 'js/nav-dropdownpreevents.js' %}"></script>
+<script src="{% static 'js/navbar-dropdownpreevents.js' %}"></script>
+<script src="{% static 'js/jquery.touch-swipe.minpreevents.js' %}"></script>
+
+</body>
+</html>

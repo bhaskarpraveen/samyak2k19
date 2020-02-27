@@ -1,0 +1,402 @@
+{% load staticfiles %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html  >
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'images/logo-1-122x122.png' %} " type="image/x-icon">
+ 
+
+  <title>Tech Events | Samyak2k19</title>
+  <link rel="stylesheet" href="{% static 'css/mobirise-iconstecheve.css' %} ">
+  <link rel="stylesheet" href="{% static 'css/tether.mintecheve.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.mintecheve.css' %} ">
+  <link rel="stylesheet" href="{% static 'bootstrap-grid.mintecheve.css' %} ">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.mintecheve.css' %} ">
+  <link rel="stylesheet" href="{% static 'css/stylessocicontecheve.css' %} ">
+  <link rel="stylesheet" href="{% static 'css/styledropdowntecheve.css' %} ">
+  <link rel="stylesheet" href="{% static 'css/stylethemetecheve.css' %} ">
+  <link rel="stylesheet" href="{% static 'css/mbr-additionaltecheve.css' %} " type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><link rel="stylesheet" href="{% static 'css/styleproduct.css' %} ">
+
+
+      <style>
+      #row .button1{
+        background-color: black;
+        text-align: center;
+        font-size: 16px;
+        align-items: center;
+      }
+      #row .button2{
+        background-color: black;
+        text-align: center;
+        font-size: 16px;
+        align-items: center;
+      }
+      #row .button3{
+        background-color: black;
+        text-align: center;
+        font-size: 16px;
+        align-items: center;
+      }
+      </style>
+      <style>
+      .style{
+        margin-left:47% ;
+        margin-bottom:5% ;
+      }
+      select{
+      width:10% ;
+
+      }
+      input{
+        width:10% ;
+      }
+
+      @media only screen and (max-width:1024px){
+        label{
+          margin-left:5%;
+        }
+        .style{
+          margin-left:35%;
+        }
+
+        select{
+          width:50%;
+        }
+        input{
+          width:50%;
+        }
+      }
+
+      .button{
+          background-color: chocolate;
+          border: none;
+          color: whitesmoke;
+          padding: 20px 100px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+      }
+      </style>
+
+</head>
+<body >
+        <section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-k">
+
+
+
+
+
+                <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                    <div class="menu-logo">
+                        <div class="navbar-brand">
+                            <span class="navbar-logo">
+                                <a href="{% url 'newapp:main' %}">
+                                     <img src="{% static 'images/logo3.png' %}" alt="" title="" style="height: 4.0rem; width: 4.0rem;">
+                                </a>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+
+                                <a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}">Home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}">Dashboard</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}">Proshow</a>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:events' %}">Events</a></li>
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}">Team</a></li> <li class="nav-item">
+                                <a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}">Sponsors</a>
+
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}">About-Us</a></li>
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:contact' %}">Contact-Us</a></li>
+                            {% if user.is_authenticated %}
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:logout' %}">Logout</a></li>
+                            {% else %}
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:login' %}">Login</a></li>
+                            {% endif %}
+                            {% if user.is_authenticated %}
+                                <li class="nav-item"><a class="nav-link link text-white display-7" href="">Welcome , {{user.username}}</a></li>
+                                {% endif %}</ul>
+
+                    </div>
+                </nav>
+            </section>
+            <div class="mbr-overlay" style="opacity: 1.0; background-color: rgb(35, 35, 35);">
+            </div>
+
+<section class="engine"><a href="?#"></a></section><section class="header12 cid-rzsWBYOriV mbr-fullscreen mbr-parallax-background" id="header12-l" style="background-image:url({% static 'images/techbg.jpg' %})">
+
+
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container ">
+            <div class="media-container">
+                <div class="col-md-12 align-center">
+                    <h1 class="mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style display-1">DEPARTMENT EVENTS</h1>
+                    <p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5">SAMYAK 2K19</p>
+                    <a href="{% url 'shopping_cart:order_summary' %}"><p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5"><font><u>Go to Cart</u></font></p></a>
+                    <p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5">
+                      <marquee behavior="" direction="">* Register for all Technical and Non-Technical Events for RS-200 (""*Not applicablie for workshops"")</marquee>
+
+                  </p>
+                  <p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5">
+                    Click on below icon to Register
+
+                  </p>
+                  <div class="mbr-section-btn align-center">
+                {% if not request.user.reg_amount %}
+                          <!--<a class="btn btn-md btn-secondary display-4" href="{% url 'payments:registrationpayment' %}">Register Here</a>-->
+                        <a class="btn btn-md btn-secondary display-4" href="">Register Here</a>
+                            {% else %}
+                            <a class="btn btn-md btn-secondary display-4" href="{% url 'newapp:events' %}">Registered</a>
+                            {% endif %}
+                      
+                  </div>
+
+
+                </div>
+            </div>
+    </div>
+
+   <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
+
+<section class="pricing-table1 cid-rzsWH6bQcj" id="pricing-tables1-m">
+
+
+
+  <!--first row starts-->
+<!-- partial:index.partial.html -->
+<!--card starts-->
+<!--my code for coloumn cards-->
+<div class="style">
+<form action="{% url 'products:departmentevents' %}" method="get">
+    <label for="featured" name="btn btn-primary"><font color="white" size="5" >&nbsp;Search</font></label>
+  <br>  <select name="featured">
+    <option value="A" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALL</option>
+    <option value="C" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSE</option>
+    <option value="E" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECE</option>
+<option value="ECM" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECM</option> 
+   <option value="EEE" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EEE</option>
+    <option value="MEC" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MECHANICAL</option>
+    <option value="CIV" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIVIL</option>
+    <option value="FA" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FINE ARTS</option>
+    <option value="BT" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIO TECHNOLOGY</option>
+    <option value="PH" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHARMACY</option>
+    <option value="DCA" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEPARTMENT  OF COMPUTER APPLICATIONS</option>
+    <option value="HM" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOTEL MANAGEMENT</option>
+    <option value="BS" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSINESS SCHOOL</option>
+    <option value="SA" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SCHOOL OF ARCHITECTURE</option>
+    <option value="CC" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COLLEGE OF COMMERCE</option>
+<option value="SL" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SCHOOL OF LAW</option> 
+<option value="FED" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FED</option>
+   <option value="O" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTHER</option>
+
+
+        </select>
+  <br>  <input type="submit" value="Select">
+</form>
+</div>
+<div class="row">
+    {% for object in object_list %}
+
+  <div class="column">
+
+    <div class="card">
+<div class="wrapper" style="background: url({{ object.displayImage.url }}); background-repeat: no-repeat; background-size:300px 500px;">
+  <div class="container">
+    <div class="top"></div>
+    <div class="botom">
+    <div class="left">
+       
+          {% if request.user.is_authenticated %}
+          {% if request.user.reg_amount %}
+          <div class="details"> <a href="{% url 'accounts:my_profile' %}" class="button">Registered</a></div>
+         
+        {% else %}
+ <!--<div class="details"><a class="btn btn-warning">Register</a></div>-->
+       <div class="details"><a href="{% url 'payments:registrationpayment'  %}" class="btn btn-warning">Register</a></div>
+        {% endif %}
+        {% else %}
+ <!--<div class="details"><a  class="btn btn-warning">Register</a></div>-->
+       <!--<div class="details"><a href="{% url 'payments:registrationpayment'  %}" class="btn btn-warning">Register</a></div>-->
+        {% endif %}
+     
+      </div>
+    </div>
+  </div>
+  <div class="inside" style="overflow: auto;overflow-x:hidden;">
+    <div class="icon"><i class="material-icons">info_outline</i></div>
+    <div class="contents">
+      <h1>{{ object.name }}</h1>
+
+      <font size=""><p>{{object.description}}</p> </font>
+    <p> <font size="3"> Time:{{object.datentime}}</font></p>
+      <p><font size="3"> Venue:{{object.venue}}</font></p>
+      <p><font size="3"> Registration fee:₹{{object.price}}</font></p>
+    
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- partial -->
+<!--card ends-->
+<!--second card starts-->
+<!--my code -->
+{% endfor %}
+</div>
+
+<!--first row ends-->
+</section>
+
+<section class="cid-rzsWKwHBnr" id="footer1-n">
+
+
+
+
+
+    <div class="container">
+        <div class="media-container-row content text-white">
+            <div class="col-12 col-md-3">
+                <div class="media-wrap">
+                    <a href="{% url 'newapp:main' %}">
+                        <img src="{% static 'images/logo-1-122x122.png' %}" alt="samyak" title="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Address
+                </h5>
+                <p class="mbr-text">
+                    K L UNIVERSITY
+                    <br>VADDESWARAM
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Contacts
+</h5>
+                <p class="mbr-text">
+                    Email:samyak@kluniversity.in
+                    <br>Phone:
+                    <p class="mbr-text align-left mbr-fonts-style display-7" id="again">
+
+                            <p>1)9154438039  2)94942748999</p>
+
+
+                            <p>3)9392112299 </p>
+
+
+                        </p>
+
+
+                </p>
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Links
+                </h5>
+                <p class="mbr-text">
+                    <a class="text-primary" href="https://www.kluniversity.in">KL UNIVERSITY</a>
+                    
+
+                </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7"></p>
+                </div>
+                <div class="col-md-6">
+                        <div class="social-list align-right">
+                            <div class="soc-item">
+                                <a href="https://twitter.com/KLUniversity" target="_blank">
+                                    <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.facebook.com/kl.samyak/" target="_blank">
+                                    <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.youtube.com/channel/UCPrOyzURgK0t6qVVeKWUcaQ" target="_blank">
+                                    <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+                            <div class="soc-item">
+                                <a href="https://www.instagram.com/kl.samyak/" target="_blank">
+                                    <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="{% static 'js/jquery.mintecheve.js' %}"></script>
+  <script src="{% static 'js/popper.mintecheve.js' %}"></script>
+  <script src="{% static 'js/tether.mintecheve.js' %}"></script>
+  <script src="{% static 'js/bootstrap.mintecheve.js' %} "></script>
+  <script src="{% static 'js/smooth-scrolltecheve.js' %} "></script>
+  <script src="{% static 'js/jquery.touch-swipe.mintecheve.js' %} "></script>
+  <script src="{% static 'js/jquery.mb.vimeo_playertecheve.js' %} "></script>
+  <script src="{% static 'js/jarallax.mintecheve.js' %} "></script>
+  <script src="{% static 'js/nav-dropdowntecheve.js' %} "></script>
+  <script src="{% static 'js/navbar-dropdowntecheve.js' %} "></script>
+  <script src="{% static 'js/scriptthemetecheve.js' %} "></script>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script  src="{% static 'js/scriptproduct.js' %} "></script>
+
+
+</body>
+</html>

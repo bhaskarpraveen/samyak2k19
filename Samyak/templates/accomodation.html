@@ -1,0 +1,690 @@
+
+
+{% load static%}
+
+
+
+<html><head>
+
+
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="shortcut icon" href="{% static 'images/logo-1-122x122.png' %}" type="image/x-icon">
+
+ 
+
+
+
+  <title>Accommodation| SAMYAK2k19</title>
+
+  <link rel="stylesheet" href="{% static 'css/mobirise-iconscontact.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/tether.mincontact.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.mincontact.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap-grid.mincontact.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.mincontact.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/styledropdowncontact.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/stylethemecontact.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/mbr-additionalcontact.css' %}" type="text/css">
+
+
+
+  
+
+    <script type="text/javascript">z
+
+    function validate(){
+
+        var choice1=document.getElementById("check").checked;
+
+    if(choice1=="")
+
+    {
+
+        alert("you must agree our terms and conditions");
+
+        return false;
+
+    }
+
+    return true;
+
+    }
+
+    </script>
+
+    <style media="screen">
+
+    /* @extend display-flex; */
+
+    display-flex, .display-flex, .display-flex-center {
+
+      display: flex;
+
+      display: -webkit-flex; }
+
+
+
+    /* @extend list-type-ulli; */
+
+    list-type-ulli {
+
+      list-style-type: none;
+
+      margin: 0;
+
+      padding: 0; }
+
+
+
+    /* Montserrat-300 - latin */
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: normal;
+
+      font-weight: 300;
+
+      src: url("../fonts/montserrat/Montserrat-Light.ttf");
+
+      /* IE9 Compat Modes */ }
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: normal;
+
+      font-weight: 400;
+
+      src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+
+      /* IE9 Compat Modes */ }
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: italic;
+
+      font-weight: 400;
+
+      src: url("../fonts/montserrat/Montserrat-Italic.ttf");
+
+      /* IE9 Compat Modes */ }
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: normal;
+
+      font-weight: 500;
+
+      src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+
+      /* IE9 Compat Modes */ }
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: normal;
+
+      font-weight: 600;
+
+      src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+
+      /* IE9 Compat Modes */ }
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: normal;
+
+      font-weight: 700;
+
+      src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+
+      /* IE9 Compat Modes */ }
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: italic;
+
+      font-weight: 700;
+
+      src: url("../fonts/montserrat/Montserrat-BoldItalic.ttf");
+
+      /* IE9 Compat Modes */ }
+
+    @font-face {
+
+      font-family: 'Montserrat';
+
+      font-style: italic;
+
+      font-weight: 900;
+
+      src: url("../fonts/montserrat/montserrat-v12-latin-900.ttf"), url("../fonts/montserrat/montserrat-v12-latin-900.eot") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v12-latin-900.svg") format("woff2"), url("../fonts/montserrat/montserrat-v12-latin-900.woff") format("woff"), url("../fonts/montserrat/montserrat-v12-latin-900.woff2") format("truetype"); }
+
+    a:focus, a:active {
+
+      text-decoration: none;
+
+      outline: none;
+
+      transition: all 300ms ease 0s;
+
+      -moz-transition: all 300ms ease 0s;
+
+      -webkit-transition: all 300ms ease 0s;
+
+      -o-transition: all 300ms ease 0s;
+
+      -ms-transition: all 300ms ease 0s; }
+
+
+
+    input, select, textarea {
+
+      outline: none;
+
+      appearance: unset !important;
+
+      -moz-appearance: unset !important;
+
+      -webkit-appearance: unset !important;
+
+      -o-appearance: unset !important;
+
+      -ms-appearance: unset !important; }
+
+
+
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+
+      appearance: none !important;
+
+      -moz-appearance: none !important;
+
+      -webkit-appearance: none !important;
+
+      -o-appearance: none !important;
+
+      -ms-appearance: none !important;
+
+      margin: 0; }
+
+
+
+    input:focus, select:focus, textarea:focus {
+
+      outline: none;
+
+      box-shadow: none !important;
+
+      -moz-box-shadow: none !important;
+
+      -webkit-box-shadow: none !important;
+
+      -o-box-shadow: none !important;
+
+      -ms-box-shadow: none !important; }
+
+
+
+    input[type=checkbox] {
+
+      appearance: checkbox !important;
+
+      -moz-appearance: checkbox !important;
+
+      -webkit-appearance: checkbox !important;
+
+      -o-appearance: checkbox !important;
+
+      -ms-appearance: checkbox !important; }
+
+
+
+    input[type=radio] {
+
+      appearance: radio !important;
+
+      -moz-appearance: radio !important;
+
+      -webkit-appearance: radio !important;
+
+      -o-appearance: radio !important;
+
+      -ms-appearance: radio !important; }
+
+
+
+    img {
+
+      max-width: 100%;
+
+      height: auto; }
+
+
+
+    figure {
+
+      margin: 0; }
+
+
+
+    p {
+
+      margin-bottom: 0px;
+
+      font-size: 15px;
+
+      color: #777; }
+
+
+
+
+
+    body {
+
+      
+
+      font-size: 14px;
+
+      line-height: 1.8;
+
+      color: #222;
+
+      font-weight: 400;
+
+      overflow: hidden;
+
+      font-family: 'Montserrat';
+
+      background-image: url("{% static 'images/accomodationbackground.jpg' %}");
+
+     background-size: 100%;
+
+      background-repeat: no-repeat;
+
+      background-size: cover;
+
+      -moz-background-size: cover;
+
+      -webkit-background-size: cover;
+
+      -o-background-size: cover;
+
+      -ms-background-size: cover;
+
+      background-position: center center;
+
+      padding: 115px 0; 
+
+    }
+
+
+
+    .container {
+
+      width: 660px;
+
+      position: relative;
+
+      margin: 0 auto; }
+
+
+
+    .display-flex-center {
+
+      justify-content: center;
+
+      -moz-justify-content: center;
+
+      -webkit-justify-content: center;
+
+      -o-justify-content: center;
+
+      -ms-justify-content: center;
+
+      align-items: center;
+
+      -moz-align-items: center;
+
+      -webkit-align-items: center;
+
+      -o-align-items: center;
+
+      -ms-align-items: center; }
+
+
+
+    .position-center {
+
+      position: absolute;
+
+      top: 50%;
+
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      -moz-transform: translate(-50%, -50%);
+
+      -webkit-transform: translate(-50%, -50%);
+
+      -o-transform: translate(-50%, -50%);
+
+      -ms-transform: translate(-50%, -50%); }
+
+
+
+    .signup-content {
+
+      background: #fff;
+
+      border-radius: 10px;
+
+      -moz-border-radius: 10px;
+
+      -webkit-border-radius: 10px;
+
+      -o-border-radius: 10px;
+
+      -ms-border-radius: 10px;
+
+      padding: 50px 85px; }
+
+
+
+    .form-group {
+
+      overflow: hidden;
+
+      margin-bottom: 20px; }
+
+
+
+    @media screen and (max-width: 768px) {
+
+      .container {
+
+        width: calc(100% - 40px);
+
+        max-width: 100%;
+
+      overflow: auto;} }
+
+    @media screen and (max-width: 480px) {
+
+      .signup-content {
+
+        padding: 50px 25px;
+
+      overflow: auto;} }
+
+
+
+   
+
+
+
+
+
+    </style>
+
+    </head>
+
+    <body style="overflow: auto">
+
+      <section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-w">
+
+
+
+
+
+
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <div class="hamburger">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </div>
+
+            </button>
+
+            <div class="menu-logo">
+
+                <div class="navbar-brand">
+
+                    <span class="navbar-logo">
+
+                        <a href="{% url 'newapp:main' %}">
+
+                             <img src="{% static 'images/logo-1-122x122.png' %}" alt="samyak" title="" style="height: 3.8rem;">
+
+                        </a>
+
+                    </span>
+
+    
+
+                </div>
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+
+                        <a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}">Home</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}">DashBoard</a>
+
+                    </li><li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:events' %}">Events</a></li>
+
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}">Gallery</a></li>
+
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}">Team</a></li> 
+
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}">proshow</a></li> 
+
+                    <li class="nav-item">
+
+                            <a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}">Sponsors</a>
+
+                        
+
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}">About-Us</a></li>
+
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:contact' %}">Contact-Us</a></li>
+
+                        {% if user.is_authenticated %}
+
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:logout' %}">Logout</a></li>
+
+                        {% else %}
+
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:login' %}">Login</a></li>
+
+                        {% endif %}
+
+                        {% if user.is_authenticated %}
+
+                            <li class="nav-item"><a class="nav-link link text-white display-7" href="">Welcome , {{user.username}}</a></li>
+
+                            {% endif %}</ul>
+
+    
+
+            </div>
+
+        </nav>
+
+    
+
+    </section>
+
+                    <div class="main" >
+
+
+
+                    <section class="signup" style="background-color: #b8d7e4">
+
+
+
+                      
+
+                        <div class="container" >
+
+
+
+                            <div class="signup-content">
+
+
+
+
+
+            <text align="center"><font aria-setsize="10Px"><h1><b><u>Terms and conditions</u></b></h1></font></text>
+
+            <font aria-setsize="20px">
+
+                <p>
+
+Directions to be followed by students requiring accommodation in University campus for SAMYAK ‘19-20:
+
+<br>
+
+1. Each student will be charged a fee of Rs.200 for stay of every 24 hrs from reporting/check-in time.
+
+<br>
+
+2. Boys and girls will be allotted different buildings for the stay.
+
+<br>
+
+3. No alcohol, cigarettes, narcotics or its likes are allowed. They are strictly prohibited. Strict action will be taken if found.
+
+<br>
+
+4. No student should cause disturbance to other students or the organizers.
+
+<br>
+
+5. Each student will be required to pay caution deposit which will be returned at the time of returning/check-out.
+
+<br>
+
+6. All the students are advised to produce hard copy of their respective institute ID card and a government ID as proof.
+
+<br>
+
+7. All the students are advised to keep SAMYAK ID with themselves at all times.<br>
+
+
+
+                </p>
+
+
+
+<p>CONTACT DETAILS : G PHANI (9849656747)</p>
+<p>CONTACT DETAILS : CH MANJUSHA (7658911035)</p>
+
+<p>* OUR BUSES WILL BE AVALIABLE FROM VIJAYAWADA BUS STAND AND RAILWAY STATION TILL 18th AFTERNOON (FREE SERVICE)</p>
+
+
+
+            </font>
+
+      <br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+    </section>     </div>
+
+</div>
+
+</center>
+
+
+
+<script src=" {% static 'js/jquery.mincontact.js' %}"></script>
+
+<script src="{% static 'js/popper.mincontact.js' %}"></script>
+
+<script src="{% static 'js/tether.mincontact.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.mincontact.js' %}"></script>
+
+<script src="{% static 'js/smooth-scrollcontact.js' %}"></script>
+
+<script src="{% static 'js/nav-dropdowncontact.js' %}"></script>
+
+<script src="{% static 'js/navbar-dropdowncontact.js' %}"></script>
+
+<script src="{% static 'js/jquery.touch-swipe.mincontact.js' %}"></script>
+
+<script src="{% static 'js/scriptthemecontact.js' %}"></script>
+
+</body>
+
+    
+
+</html>
+
+

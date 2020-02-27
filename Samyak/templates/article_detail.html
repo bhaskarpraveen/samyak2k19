@@ -1,0 +1,10 @@
+{% if request.user.is_staff %}
+<div class="article-entry">
+  <h2>{{ object.name }}</h2>
+    
+    <p>{{ object.description }}</p>
+  </div>
+
+  <p><a href="{% url 'newapp:article_edit' product.pk %}">Edit</a> | <a href="{% url 'newapp:article_delete' product.pk %}">Delete</a></p>
+  <p>Back to <a href="{% url 'newapp:article_list' %}">All Articles</a>.</p>
+  {% endif %}

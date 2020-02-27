@@ -1,0 +1,188 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css\stylelogin.css' %}">
+    <script src="{% static 'js/scriptlogin.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!----<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'css/style1team.css' %}">
+
+
+<link rel="stylesheet" href="{% static 'css/mobirise-iconsteam.css' %}">
+<link rel="stylesheet" href="{% static 'css/tether.minteam.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.minteam.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/bootstrap-reboot.minteam.css' %}">
+<link rel="stylesheet" href="{% static 'css/stylessociconteam.css' %}">
+<link rel="stylesheet" href="{% static 'css/styledropdownteam.css' %}">
+<link rel="stylesheet" href="{% static 'css/stylethemeteam.css' %}">
+<link rel="stylesheet" href="{% static 'css/mbr-additionalteam.css' %}" type="text/css">
+
+<style>
+ @media only screen and (max-width: 1024px){
+   #helll{
+     margin-top: 0% !important;
+
+     height: 50%;
+     width: 50% !important;
+   }
+ }
+
+</style>
+</head>
+
+  <body style="background-image: url({% static 'images/loginbg.jpeg' %})">
+    <!--navigation-->
+
+    <section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-k">
+
+
+
+
+
+      <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </button>
+          <div class="menu-logo">
+              <div class="navbar-brand">
+                  <span class="navbar-logo">
+                      <a href="{% url 'newapp:main' %}">
+                           <img src="{% static 'images/logo.png' %}" alt="" title="" style="height: 5.0rem !important; width: 5.5rem !important;">
+                      </a>
+                  </span>
+
+              </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+
+                      <a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}" style="font-size:15px;">Home</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}" style="font-size:15px;">Dashboard</a></li>
+                  <li class="nav-item">
+                      <a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}" style="font-size:15px;">Proshow</a>
+                  </li>
+
+                  <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:events' %}" style="font-size:15px;">Events</a></li>
+                  <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}" style="font-size:15px;">Gallery</a></li>
+                  <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}" style="font-size:15px;">Team</a></li> <li class="nav-item">
+                      <a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}" style="font-size:15px;">Sponsors</a>
+
+                  <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}" style="font-size:15px;">About-Us</a></li>
+                  <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:contact' %}" style="font-size:15px;">Contact-Us</a></li>
+
+
+          </div>
+      </nav>
+  </section>
+<!--navigation-->
+
+
+
+
+<form method="post" class="login-form" style="height: auto;margin-top: 10%;margin-bottom: 20%; width:25%;" id="helll">
+    <h1>Register</h1>
+    {% csrf_token %}
+
+    <div class="txtb">
+
+        {{form.username}}
+
+
+        <span ></span>
+      </div>
+      {{ form.username.errors }}
+  <div class="txtb">
+
+        {{form.fullname}}
+
+
+        <span ></span>
+      </div>
+      {{ form.fullname.errors }}     
+ <div class="txtb">
+
+        {{form.email}}
+
+        <span ></span>
+      </div>
+      {{form.email.errors}}
+      <!-- Example single danger button -->
+ <div class="txtb">
+
+        {{form.phonenumber}}
+
+        <span ></span>
+      </div>
+      {{form.phonenumber.errors}}
+    <select class="custom-select" placeholder="college" name="gender" id="" >
+    {% for value, text in form.fields.gender.choices %}
+<option value="{{ value }}">{{ text }}</option>
+{% endfor %}
+</select> <br>  <br>
+<select class="custom-select" name="college"  id="">
+    {% for value, text in form.fields.college.choices %}
+<option value="{{ value }}">{{ text }}</option>
+{% endfor %}
+</select> <br>
+<div class="txtb">
+
+  {{form.college_name}}
+
+  <span ></span>
+</div>
+
+<div class="txtb">
+
+    <input type="txtb" name='id_number' placeholder="id_number">
+    <span ></span>
+  </div>
+  <div class="txtb">
+
+    <input type="password" name='password1' placeholder="password">
+
+    <span ></span>
+  </div>
+  {{form.password1.errors}}
+  <div class="txtb">
+
+    <input type="password" name='password2' placeholder="confirm password">
+
+    <span ></span>
+  </div>
+  {{form.password2.errors}}
+<div class="" style="font-size:150%;">
+    <input type="submit" class="logbtn" value="Register">
+</div>
+
+    <br>
+    <div class="funt" style="font-size:200%;">
+    Already have an  account? <a href="{% url 'accounts:login' %}">Login</a>
+</div>  </form>
+
+      <script src="{% static 'js/jquery.minteam.js' %}"></script>
+  <script src="{% static 'js/popper.minteam.js' %}"></script>
+  <script src="{% static 'js/tether.minteam.js' %}"></script>
+  <script src="{% static 'js/bootstrap.minteam.js' %}"></script>
+  <script src="{% static 'js/smooth-scrollteamassets.js' %}"></script>
+  <script src="{% static 'js/jquery.touch-swipe.minteam.js' %}"></script>
+  <script src="{% static 'js/jquery.mb.vimeo_playerteam.js' %}"></script>
+  <script src="{% static 'js/jarallax.minteam.js' %}"></script>
+  <script src="{% static 'js/nav-dropdownteam.js' %}"></script>
+  <script src="{% static 'js/navbar-dropdownteam.js' %}"></script>
+  <script src="{% static 'js/scriptthemeteam.js' %}"></script>
+
+  </body>
+
+
+</html>

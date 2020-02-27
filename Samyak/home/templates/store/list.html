@@ -1,0 +1,12 @@
+<table class="table">
+    <tr>
+        <th>Ambassador</th>
+        <th>members</th>
+    </tr>
+{% for book in books %}
+    <tr>
+        <td>{{book.name}}</td>
+        <td>{{book.get_authors}}</td>
+    </tr>
+{% endfor %}
+</table>

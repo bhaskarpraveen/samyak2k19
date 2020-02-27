@@ -1,0 +1,260 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'images/logo-1-122x122.png' %}" type="image/x-icon">
+ 
+
+  <title>Contact-Us | SAMYAK2k19</title>
+  <link rel="stylesheet" href="{% static 'css/mobirise-iconscontact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/tether.mincontact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.mincontact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-grid.mincontact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.mincontact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/styledropdowncontact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/stylethemecontact.css' %}">
+  <link rel="stylesheet" href="{% static 'css/mbr-additionalcontact.css' %}" type="text/css">
+  <style>
+        
+        @media only screen and (max-width:800px){
+            #test{
+                margin-left:24%;
+            }
+            #again{
+                   margin-left:38%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+  <section class="menu cid-rzr9NpTR2b" once="menu" id="menu1-w">
+
+
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="{% url 'newapp:main' %}">
+                         <img src="{% static 'images/logo-1-122x122.png' %}" alt="samyak" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-7" href="{% url 'newapp:main' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-7" href="{% url 'newapp:dash' %}">DashBoard</a>
+                </li><li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:events' %}">Events</a></li>
+                <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:gallery' %}">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:team' %}">Team</a></li> 
+                <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:proshow' %}">proshow</a></li> 
+                <li class="nav-item">
+                        <a class="nav-link link text-white display-7" href="{% url 'newapp:sponsors' %}">Sponsors</a>
+                    
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:about' %}">About-Us</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'newapp:contact' %}">Contact-Us</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:logout' %}">Logout</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link link text-white display-7" href="{% url 'accounts:login' %}">Login</a></li>
+                    {% endif %}
+                    {% if user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link link text-white display-7" href="">Welcome , {{user.username}}</a></li>
+                        {% endif %}</ul>
+
+        </div>
+    </nav>
+
+</section>
+
+
+<section class="engine"><a href="#"></a></section><section class="mbr-section contacts1 cid-rzum043gsW" id="contacts1-x">
+    <!---->
+
+    <!---->
+    <!--Overlay-->
+
+    <!--Container-->
+    <div id="abhi">
+    <div class="container">
+        <div class="row">
+            <!--Titles-->
+            <div class="title col-12">
+                <h2 class="align-left mbr-fonts-style display-1">
+                    Our Contacts
+                </h2>
+
+            </div>
+            <!--Left-->
+            <div class="col-12 col-md-6">
+                <div class="left-block wrapper">
+                    <div class="b b-adress">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            Address:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7">KL University,Green Fields, Vaddeswaram, Andhra Pradesh 522502<br></p>
+                    </div>
+                    <div class="b b-phone">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            Phone:
+                        </h5>
+                            <p class="mbr-text align-left mbr-fonts-style display-7" id="again">
+                                    <p>Name: Rahul Chagarlamudi</p>
+                                    <p>Phone Number: <a href="tel:9154438039">9154438039</a> </p>
+                                    <br>
+                                    <p>Name: Tarun Ravela</p>
+                                    <p>Phone Number: <a href="tel:9494274899">94942748999</a> </p>
+                                    <br>
+                                   <p>Name: Tejeswar Palla</p>
+                                    <p>Phone Number: <a href="tel:9392112299">9392112299</a> </p>
+                                </p>
+                     
+                        <p class="mbr-text align-left mbr-fonts-style display-7">
+                            
+                        </p>
+                    </div>
+                    <div class="b b-mail">
+                        <h5 class="align-left mbr-fonts-style m-0 display-5">
+                            E-mail:
+                        </h5>
+                        <p class="mbr-text align-left mbr-fonts-style display-7" id="test">
+                            samyak@kluniversity.in
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Right-->
+            <div class="col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCy9r70T3NYf3PhvVflTo0_zdif2_IoIYs&amp;q=place_id:ChIJQxnYp6LwNToRuJTfZY_XpYs" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="cid-rzra9C8dtl" id="footer1-j">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row content text-white">
+                <div class="col-12 col-md-3">
+                    <div class="media-wrap">
+                        <a href="{% url 'newapp:main' %}">
+                            <img src="{% static 'images/logo-1-122x122.png' %}" alt="samyak" title="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Address
+                    </h5>
+                    <p class="mbr-text">
+                        K L UNIVERSITY
+                        <br>VADDESWARAM
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Contacts
+                    </h5>
+                    <p class="mbr-text">
+                        Email: samyak@kluniversity.in
+                        <br>Phone:
+                        <p class="mbr-text align-left mbr-fonts-style display-7" id="again">
+                                
+                                <p>1)9154438039  2)94942748999</p>
+                            
+                                
+                                <p>3)9392112299 </p>
+                         
+                            
+                            </p>
+                 
+                        
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                    <h5 class="pb-3">
+                        Links
+                    </h5>
+                    <p class="mbr-text">
+                        <a class="text-primary" target="__blank" href="https://www.kluniversity.in">K L UNIVERSITY</a>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-6 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="social-list align-right">
+                                <div class="soc-item">
+                                    <a href="https://twitter.com/KLUniversity" target="_blank">
+                                        <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://www.facebook.com/kl.samyak/" target="_blank">
+                                        <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://www.youtube.com/channel/UCPrOyzURgK0t6qVVeKWUcaQ" target="_blank">
+                                        <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                                    </a>
+                                </div>
+                                <div class="soc-item">
+                                    <a href="https://www.instagram.com/kl.samyak/" target="_blank">
+                                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                                    </a>
+                                </div>
+                              
+                              
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+  <script src=" {% static 'js/jquery.mincontact.js' %}"></script>
+  <script src="{% static 'js/popper.mincontact.js' %}"></script>
+  <script src="{% static 'js/tether.mincontact.js' %}"></script>
+  <script src="{% static 'js/bootstrap.mincontact.js' %}"></script>
+  <script src="{% static 'js/smooth-scrollcontact.js' %}"></script>
+  <script src="{% static 'js/nav-dropdowncontact.js' %}"></script>
+  <script src="{% static 'js/navbar-dropdowncontact.js' %}"></script>
+  <script src="{% static 'js/jquery.touch-swipe.mincontact.js' %}"></script>
+  <script src="{% static 'js/scriptthemecontact.js' %}"></script>
+
+
+</body>
+</html>

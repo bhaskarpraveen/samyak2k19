@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<style>
+@media only screen and (max-width:900px){
+    img{
+        
+        height: 110%;
+        width: 110%;
+        margin-top:30%;
+    }
+}
+</style>
+</head>
+
+
+
+<img src="{%static 'images/mail.jpg' %}" width="110%" height="110%">
+
+{% endblock %}
